@@ -1,0 +1,60 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+.container {
+	width: 884px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.header {}
+.header .header-top {
+	color: #90c2ff;
+	background-color: #262727;
+	padding: 13px 0;
+}
+.header .header-top .logo {
+	float: left;
+	font-size: 30px;
+	font-weight: 400;
+}
+.header .header-top .header-top-nav {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+.header .header-top .header-top-nav li {
+	float: left;
+	list-style: none;
+}
+.header .header-top .header-top-nav li a.lnk {
+	color: #90c2ff;
+	font-size: 16px;
+}
+.header .header-bottom {}
