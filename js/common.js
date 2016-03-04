@@ -12,15 +12,16 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	// $("a.scroll").click(function() {
-	// 	$.scrollTo($(".div"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
-
-	//Каруселька
-	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
-	$(".carousel").owlCarousel();
+	$("a.howitworkslnk").on("click", function() {
+		$.scrollTo($("#howitworks"), 800, {
+			offset: 0
+		});
+	});
+	$("a.helplnk").on("click", function() {
+		$.scrollTo($("#help"), 800, {
+			offset: 0
+		});
+	});
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/

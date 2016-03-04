@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 	<link rel="shortcut icon" href="favicon.png" />
-	<link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css" />
-	<!--<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" /> -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/icomoon.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/style.css" />
@@ -24,23 +24,113 @@
 			<div class="container">
 				<div class="logo">Socialabs</div>
 				<ul class="header-top-nav clearfix">
-					<li><a href="#" class="lnk">Как это работает</a></li>
-					<li><a href="#" class="lnk">О нас</a></li>
-					<li><a href="#" class="lnk">Вход</a></li>
-					<li><a href="#" class="lnk">Регистрация</a></li>
+					<li><a href="#" class="lnk howitworkslnk">Как это работает</a></li>
+					<li><a href="#" class="lnk helplnk">Помощь</a></li>
+					<li class="bordered"><a href="#popup-login" class="lnk fancybox"><i class="icon icon-login"></i>Вход</a></li>
+					<li class="bordered"><a href="#popup-registration" class="lnk fancybox"><i class="icon icon-registration"></i>Регистрация</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="header-bottom">
-			<div class="container">header-bottom</div>
+		<div class="firstscreen">
+			<div class="container">
+				<div class="firstscreen_logo">Socialabs</div>
+				<div class="firstscreen_slogan">Новейшее слово в раскрутке вашего продукта через соц. медиа!</div>
+				<a href="#popup-login" class="btn fancybox">Вход</a>
+				<a href="#popup-registration" class="btn btn-light fancybox">Регистрация</a>
+			</div>
 		</div>
 	</header>
+	<section id="howitworks">
+		<div class="section__title">Рекламодателю</div>
+		<div class="section__body">
+			<div class="container clearfix">
+				<div class="col3">
+					<i class="icon icon-magaphone"></i>
+					<div class="text">Создавайте<br>компании</div>
+				</div>
+				<div class="col3 borders">
+					<i class="icon icon-request"></i>
+					<div class="text">Получайте заявки от<br>исполнителей</div>
+				</div>
+				<div class="col3">
+					<i class="icon icon-chart"></i>
+					<div class="text">Отслеживайте<br>конверсию</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section>
-		<div class="container">section</div>
+		<div class="section__title">Держателю площадки</div>
+		<div class="section__body">
+			<div class="container clearfix">
+				<div class="col3">
+					<i class="icon icon-new_areas"></i>
+					<div class="text">Создавайте<br>компании</div>
+				</div>
+				<div class="col3 borders">
+					<i class="icon icon-tasks"></i>
+					<div class="text">Получайте заявки от<br>исполнителей</div>
+				</div>
+				<div class="col3">
+					<i class="icon icon-money"></i>
+					<div class="text">Отслеживайте<br>конверсию</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="help">
+		<div class="section__title">Помощь</div>
+		<div class="section__body">
+			<div class="container clearfix">
+				<div class="col2">Рекламодателю</div>
+				<div class="col2">Держателю площадки</div>
+			</div>
+			<a href="#" class="btn btn-light2 btn-helpmore">Другие вопросы</a>
+		</div>
 	</section>
 	<footer>
 		<div class="container">footer</div>
 	</footer>
+	<div id="popup-login" class="popup">
+		<form id="login" action="" method="post">
+			<div class="form-title">Авторизация</div>
+			<input type="text" name="email" placeholder="Email">
+			<input type="password" name="pass" placeholder="Пароль">
+			<button class="btn" type="submit">Войти на сайт</button>
+			<a href="#popup-resetpass" class="resetpass fancybox">Напомнить пароль</a>
+			<div class="socials">
+				<a class="facebook" href="#"><i class="icon-facebook"></i></a>
+				<a class="vk" href="#">vk</a>
+				<a class="twitter" href="#"><i class="icon-twitter"></i></a>
+			</div>
+		</form>
+	</div>
+	<div id="popup-registration" class="popup">
+		<form id="registration" action="" method="post">
+			<div class="form-title">Регистрация</div>
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="email" placeholder="Email">
+			<input type="password" name="pass" placeholder="Пароль">
+			<button class="btn" type="submit">Зарегистрироваться</button>
+			<div class="socials">
+				<a class="facebook" href="#"><i class="icon-facebook"></i></a>
+				<a class="vk" href="#">vk</a>
+				<a class="twitter" href="#"><i class="icon-twitter"></i></a>
+			</div>
+		</form>
+	</div>
+	<div id="popup-resetpass" class="popup">
+		<form id="resetpass" action="" method="post">
+			<div class="form-title">Восстановление пароля</div>
+			<input type="text" name="email" placeholder="Email">
+			<button class="btn" type="submit">Отправить запрос</button>
+			<div class="socials">
+				<a class="facebook" href="#"><i class="icon-facebook"></i></a>
+				<a class="vk" href="#">vk</a>
+				<a class="twitter" href="#"><i class="icon-twitter"></i></a>
+			</div>
+		</form>
+	</div>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
 	<script src="js/html5shiv/html5shiv.min.js"></script>
@@ -48,8 +138,9 @@
 	<script src="js/html5shiv/respond.min.js"></script>
 	<![endif]-->
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<!-- <script src="js/fancybox/jquery.fancybox.pack.js"></script> -->
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery.textPlaceholder.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
