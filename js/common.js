@@ -23,6 +23,18 @@ $(document).ready(function() {
 		});
 	});
 
+	//Expand FAQ on index page
+	$(".question").on("click", function() {
+		var e = $(this).parent().find(".answer");
+		if ( e.hasClass("js-expand") ) {
+			e.slideUp();
+			e.removeClass("js-expand");
+		} else {
+			e.slideDown();
+			e.addClass("js-expand");
+		}
+	});
+
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() {
