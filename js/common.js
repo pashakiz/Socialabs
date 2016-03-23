@@ -10,7 +10,7 @@ $(document).ready(function() {
 	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
 	$(".fancybox").fancybox();
 
-	//Плавный скролл до блока .div по клику на .scroll
+	//Плавный скролл до блока
 	//Документация: https://github.com/flesler/jquery.scrollTo
 	$("a.howitworkslnk").on("click", function() {
 		$.scrollTo($("#howitworks"), 800, {

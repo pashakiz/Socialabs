@@ -23,6 +23,9 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
+html, body {
+	height: 100%;
+}
 body {
 	font-family: "HelveticaNeueCyr", sans-serif;
 	font-size: 15px;
