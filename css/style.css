@@ -1,17 +1,17 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #a8a8a8;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #a8a8a8;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #a8a8a8;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #a8a8a8;
 	opacity: 1;
 }
 
@@ -310,7 +310,64 @@ footer .social a:last-child {
 
 .popup {
 	display: none;
+	padding: 21px 20px
 }
+.popup .form-title {
+	color: #2c68ae;
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.popup input {
+	width: 247px;
+	display: block;
+	border: 1px solid #e6e6e6;
+	color: #a8a8a8;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 10px;
+	margin-bottom: 13px;
+	box-sizing: border-box;
+	outline: none;
+}
+.popup a.resetpass {
+	display: block;
+	color: #a8a8a8;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 19px;
+	text-decoration: none;
+}
+.popup a.resetpass:hover {
+	text-decoration: underline;
+}
+.popup .socials {
+	margin-bottom: 18px;
+}
+.popup .socials a {
+	font-size: 17px;
+	line-height: 17px;
+	color: #7fb9ff;
+	text-decoration: none;
+	margin-right: 9px;
+}
+.popup .socials a:last-child {
+	margin-right: 0;
+}
+.popup .socials a.facebook {}
+.popup .socials a.vk {}
+.popup .socials a.twitter {
+	font-size: 18px;
+}
+.popup .btn-submit-popup {
+	width: auto;
+	background-color: #7fb9ff;
+	padding: 0 19px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 34px;
+}
+
 #login {}
 #registration {}
 #popup-resetpass {}

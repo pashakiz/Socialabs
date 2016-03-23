@@ -60,4 +60,9 @@
 .icon-youtube:before {
     content: "\e90b";
 }
-
+.icon-vk:before {
+    content: "\e90c";
+}
+.icon-close:before {
+    content: "\e90d";
+}
