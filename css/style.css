@@ -367,6 +367,16 @@ footer .social a:last-child {
 	font-weight: 400;
 	line-height: 34px;
 }
+.popup .form-message {
+	display: none;
+	color: #7fb9ff;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+.popup .form-message.error {
+	color: #ff7f7f;
+}
 
 #login {}
 #registration {}

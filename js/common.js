@@ -37,20 +37,24 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$("form#login").submit(function() {
 
-		var name = $(this).find("input[name='name']").val(),
-			email = $(this).find("input[name='email']").val();
+		var	email = $(this).find("input[name='email']").val(),
+			pass = $(this).find("input[name='pass']").val();
 
-		if (!name || !email) {
-			alert("Заполните поля формы.");
+		if (!email || !pass) {
+			$(".form-message").html("Заполните поля формы.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
 			return false;
 		}
 
 		var email_regexp = /.+@.+\..+/i;
 		var email_test = email_regexp.test(email);
 		if (!email_test) {
-			alert("Введен некоректный Email-адрес.");
+			$(".form-message").html("Введен некоректный Email-адрес.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
 			return false;
 		}
 
@@ -59,20 +63,106 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form").serialize(),
 			success: function(response) {
-				//$('#order_status').html(response);
-				$('#order_status').html('Спасибо, Ваша заявка отправлена!');
-				console.log("jquery-ajax-mail-success");
-				console.log('response: ' + response);
+				$(".form-message").html("OK message");
+				$(".form-message").removeClass("error");
+				$(".form-message").slideDown();
 			},
 			error:  function(xhr, str){
-				alert('Возникла ошибка: ' + xhr.responseCode);
-				console.log('response: ' + xhr);
+				$(".form-message").html("Error message");
+				$(".form-message").addClass("error");
+				$(".form-message").slideDown();
 			}
 		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
+			// alert("Спасибо за заявку!");
+			// setTimeout(function() {
+			// 	$.fancybox.close();
+			// }, 1000);
+		});
+		return false;
+	});
+	$("form#registration").submit(function() {
+
+		var name = $(this).find("input[name='name']").val(),
+			email = $(this).find("input[name='email']").val(),
+			pass = $(this).find("input[name='pass']").val();
+
+		if (!name || !email|| !pass) {
+			$(".form-message").html("Заполните поля формы.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
+			return false;
+		}
+
+		var email_regexp = /.+@.+\..+/i;
+		var email_test = email_regexp.test(email);
+		if (!email_test) {
+			$(".form-message").html("Введен некоректный Email-адрес.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
+			return false;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $("form").serialize(),
+			success: function(response) {
+				$(".form-message").html("OK message");
+				$(".form-message").removeClass("error");
+				$(".form-message").slideDown();
+			},
+			error:  function(xhr, str){
+				$(".form-message").html("Error message");
+				$(".form-message").addClass("error");
+				$(".form-message").slideDown();
+			}
+		}).done(function() {
+			// alert("Спасибо за заявку!");
+			// setTimeout(function() {
+			// 	$.fancybox.close();
+			// }, 1000);
+		});
+		return false;
+	});
+	$("form#resetpass").submit(function() {
+
+		var email = $(this).find("input[name='email']").val();
+
+		if (!email) {
+			$(".form-message").html("Заполните поля формы.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
+			return false;
+		}
+
+		var email_regexp = /.+@.+\..+/i;
+		var email_test = email_regexp.test(email);
+		if (!email_test) {
+			$(".form-message").html("Введен некоректный Email-адрес.");
+			$(".form-message").addClass("error");
+			$(".form-message").slideDown();
+			return false;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $("form").serialize(),
+			success: function(response) {
+				$(".form-message").html("Запрос отправлен, загляните на почту!");
+				$(".form-message").removeClass("error");
+				$(".form-message").slideDown();
+			},
+			error:  function(xhr, str){
+				$(".form-message").html("Пользователь с таким email не найден!");
+				$(".form-message").addClass("error");
+				$(".form-message").slideDown();
+			}
+		}).done(function() {
+			// alert("Спасибо за заявку!");
+			// setTimeout(function() {
+			// 	$.fancybox.close();
+			// }, 1000);
 		});
 		return false;
 	});
