@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	//show/hide messages
+	// при клике на иконку сообщений нужно добавить класс .move сайдбарам и контенту
+
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/
 	$("[placeholder]").textPlaceholder();

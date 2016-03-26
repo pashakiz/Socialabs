@@ -32,11 +32,47 @@ body {
 	font-weight: 300;
 	line-height: 1;
 }
-.container {
+.container-main {
 	width: 884px;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin: 0 auto;
+}
+.container {
+	height: 100%;
+	position: relative;
+}
+.move {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.content {
+	padding: 0 0 0 245px;
+}
+.content.move {
+	padding: 0 280px 0 0;
+}
+.sidebar-left {
+	height: 100%;
+	width: 245px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+.sidebar-left.move {
+	left: -245px;
+}
+.sidebar-right {
+	width: 280px;
+	position: absolute;
+	right: -300px;
+}
+.sidebar-right.move {
+	right: 0px;
 }
 .clearfix:after {
 	content: "";
