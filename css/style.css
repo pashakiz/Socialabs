@@ -313,7 +313,9 @@ footer .social a:last-child {
 
 .popup {
 	display: none;
-	padding: 21px 20px
+	padding: 21px 20px;
+	position: relative;
+	z-index: 500;
 }
 .popup .form-title {
 	color: #2c68ae;
@@ -459,9 +461,10 @@ footer .social a:last-child {
 	color: #315bb7;
 	width: 25px;
 	height: 20px;
-	padding: 2px 5px 3px;
+	padding: 2px 5px 1px;
 	box-sizing: border-box;
 	cursor: pointer;
+	text-decoration: none;
 }
 .sidebar-left {
 	height: 100%;
