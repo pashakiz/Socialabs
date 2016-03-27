@@ -2,10 +2,15 @@ $(document).ready(function() {
 
 	//show/hide messages
 	// при клике на иконку сообщений нужно добавить класс .move сайдбарам и контенту
-	$(".content").on("click", function() {
-		$(this).toggleClass("move");
-		$(".sidebar-left").toggleClass("move");
-		$(".sidebar-right").toggleClass("move");
+	$(".sidebar-left__messages").on("click", function() {
+		$(".content").addClass("move");
+		$(".sidebar-left").addClass("move");
+		$(".sidebar-right").addClass("move");
+	});
+	$(".sidebar-right__close").on("click", function() {
+		$(".content").removeClass("move");
+		$(".sidebar-left").removeClass("move");
+		$(".sidebar-right").removeClass("move");
 	});
 
 	//Placeholder
