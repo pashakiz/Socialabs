@@ -20,7 +20,61 @@
 </head>
 <body>
 	<div class="container">
-		<div class="sidebar-left">sidebar-left</div>
+		<div class="sidebarleft">
+			<div class="sidebarleft__header clearfix">
+				<div class="sidebarleft__header__logo">SocAdvert</div>
+				<div class="sidebarleft__header__controls clearfix">
+					<div class="sidebarleft__header__controls__item"><span class="icon-message"></span></div>
+					<div class="sidebarleft__header__controls__item">
+						<i class="icon-help"></i>
+						<div class="sidebarleft__header__controls__item__inner">
+							<a href="help.html">Помощь</a>
+							<a href="tickets.html">Тикеты</a>
+						</div>
+					</div>
+					<div class="sidebarleft__header__controls__item">
+						<i class="icon-settings"></i>
+						<div class="sidebarleft__header__controls__item__inner">
+							<a href="settings.html">Настройка профиля</a>
+							<a href="?logout">Выйти</a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- .sidebarleft__header -->
+			<div class="sidebarleft__user clearfix">
+				<div class="sidebarleft__user__avatar">
+					<img src="img/user-0001-ava-small.jpg" alt="urermane">
+				</div>
+				<div class="sidebarleft__user__info">
+					<div class="sidebarleft__user__info__role">Рекламодатель</div>
+					<div class="sidebarleft__user__info__row"><i class="icon-online"></i>lilia_veshena</div>
+					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Баланс"><i class="icon-balance"></i>20 р.</a>
+					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Заработано"><i class="icon-balance-earned"></i>50000000 р.</a>
+				</div>
+			</div> <!-- .sidebarleft__user -->
+			<ul class="sidebarleft__nav">
+				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-campaign"></i><span class="sidebarleft__nav__a__text">Компании</span><span class="sidebarleft__nav__a__count">7</span></a>
+				</li>
+				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-playground"></i>Площадки</a>
+				</li>
+				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-favorite-bold"></i>Избранное</a>
+				</li>
+				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-news"></i><span class="sidebarleft__nav__a__text">Новости</span><span class="sidebarleft__nav__a__count">99</span></a>
+				</li>
+				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-partners"></i>Партнерская программа</a>
+				</li>
+				<li class="sidebarleft__social clearfix">
+					<a href="#" class="sidebarleft__social__a"><i class="icon-instagram"></i></a>
+					<a href="#" class="sidebarleft__social__a"><i class="icon-facebook"></i></a>
+					<a href="#" class="sidebarleft__social__a"><i class="icon-twitter"></i></a>
+					<a href="#" class="sidebarleft__social__a"><i class="icon-youtube"></i></a>
+				</li>
+			</ul> <!-- .sidebarleft__nav -->
 		<div class="content">
 			<ul class="content__tabs clearfix">
 				<li>
@@ -31,7 +85,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="sidebar-right">sidebar-right</div>
+		<div class="sidebarright">sidebarright</div>
 	</div>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
@@ -40,6 +94,7 @@
 	<script src="js/html5shiv/respond.min.js"></script>
 	<![endif]-->
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.tooltip.min.js"></script>
 	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>

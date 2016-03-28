@@ -1,17 +1,32 @@
 $(document).ready(function() {
 
-	//show/hide messages
-	// при клике на иконку сообщений нужно добавить класс .move сайдбарам и контенту
-	$(".sidebar-left__messages").on("click", function() {
+	// show messages
+	$(".sidebarleft__header__controls__item .icon-message").on("click", function() {
+		$(".sidebarleft__header__controls__item").removeClass("active");
 		$(".content").addClass("move");
-		$(".sidebar-left").addClass("move");
-		$(".sidebar-right").addClass("move");
+		$(".sidebarleft").addClass("move");
+		$(".sidebarright").addClass("move");
 	});
-	$(".sidebar-right__close").on("click", function() {
+	// hide messages
+	$(".sidebarright__close").on("click", function() {
 		$(".content").removeClass("move");
-		$(".sidebar-left").removeClass("move");
-		$(".sidebar-right").removeClass("move");
+		$(".sidebarleft").removeClass("move");
+		$(".sidebarright").removeClass("move");
 	});
+	$(".sidebarleft__header__controls__item i").on("click", function() {
+		if ( !$(this).parent().hasClass("active") ) {
+			$(".sidebarleft__header__controls__item").removeClass("active");
+			$(this).parent().addClass("active");
+			$(".content").on("click", function() {
+				$(".sidebarleft__header__controls__item").removeClass("active");
+			});
+		} else {
+			$(this).parent().removeClass("active");
+		}
+	});
+
+	// Bootstrap: tooltip.js v3.3.6 http://getbootstrap.com/javascript/#tooltip
+	$('[data-toggle="tooltip"]').tooltip();
 
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/

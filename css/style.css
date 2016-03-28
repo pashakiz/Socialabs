@@ -43,6 +43,8 @@ body {
 	display: block;
 	float: none;
 	clear: both;
+	height: 0;
+	visibility: hidden;
 }
 .btn {
 	width: 149px;
@@ -466,7 +468,7 @@ footer .social a:last-child {
 	cursor: pointer;
 	text-decoration: none;
 }
-.sidebar-left {
+.sidebarleft {
 	height: 100%;
 	width: 245px;
 	background-color: #262727;
@@ -481,7 +483,7 @@ footer .social a:last-child {
 	transition: all 0.3s ease-in-out;
 	color: #899098;
 }
-.sidebar-left.move {
+.sidebarleft.move {
 	left: -245px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -489,7 +491,220 @@ footer .social a:last-child {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.sidebar-right {
+.sidebarleft__header {
+	padding: 22px 7px 20px 16px;
+	border-bottom: 1px solid #393a3a;
+	position: relative;
+}
+.sidebarleft__header__logo {
+	float: left;
+	color: #90c2ff;
+	font-size: 20px;
+	font-weight: 400;
+}
+.sidebarleft__header__controls {
+	float: right;
+}
+.sidebarleft__header__controls__item {
+	float: left;
+	height: 16px;
+	cursor: pointer;
+	padding: 1px 9px;
+	z-index: 110;
+}
+.sidebarleft__header__controls__item:nth-child(2) {
+	border-right: 1px solid #393a3a;
+	border-left: 1px solid #393a3a;
+}
+.sidebarleft__header__controls__item:hover,
+.sidebarleft__header__controls__item.active {
+	color: #5d6062;
+}
+.sidebarleft__header__controls__item .icon-message {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 12px;
+	margin-top: 2px;
+}
+.sidebarleft__header__controls__item .icon-help {
+	font-size: 13px;
+	display: inline-block;
+	margin-top: 1px;
+}
+.sidebarleft__header__controls__item .icon-settings {
+	font-size: 16px;
+}
+.sidebarleft__header__controls__item__inner {
+	display: none;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 63px;
+	width: 245px;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(4, 4, 4, 0.21);
+	-moz-box-shadow:    0px 3px 3px 0px rgba(4, 4, 4, 0.21);
+	box-shadow:         0px 3px 3px 0px rgba(4, 4, 4, 0.21);
+	z-index: 110;
+}
+.sidebarleft__header__controls__item.active .sidebarleft__header__controls__item__inner {
+	display: block;
+}
+.sidebarleft__header__controls__item__inner a {
+	display: block;
+	background-color: #262727;
+	font-size: 13px;
+	font-weight: 400;
+	color: #899098;
+	border-bottom: 1px solid #2c2c2c;
+	text-align: right;
+	padding: 12px 15px 11px;
+	text-decoration: none;
+}
+.sidebarleft__header__controls__item__inner a:last-child {
+	border-bottom: none;
+}
+.sidebarleft__header__controls__item__inner a:hover {
+	color: #5d6062;
+}
+.sidebarleft__user {
+	padding: 21px 17px 22px;
+}
+.sidebarleft__user__avatar {
+	float: left;
+	width: 74px;
+	height: 74px;
+	-webkit-border-radius: 37px;
+	-moz-border-radius: 37px;
+	border-radius: 37px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+.sidebarleft__user__avatar img {
+	width: 74px;
+	height: 74px;
+}
+.sidebarleft__user__info {
+	float: left;
+	font-size: 13px;
+	font-weight: 400;
+}
+.sidebarleft__user__info__role {
+	font-size: 14px;
+}
+.sidebarleft__user__info__row {
+	display: block;
+	text-decoration: none;
+	color: #899098;
+	margin-top: 7px;
+}
+.sidebarleft__user__info__row i {
+	display: inline-block;
+	width: 16px;
+	margin-right: 5px;
+}
+.sidebarleft__user__info__row i.icon-online {
+	color: #759bc9;
+	font-size: 8px;
+	line-height: 8px;
+}
+.sidebarleft__user__info__row i.icon-online.offline {
+	color: #9b9b9b;
+}
+.sidebarleft__user__info__row i.icon-balance {
+	font-size: 12px;
+}
+.sidebarleft__user__info__row i.icon-balance-earned {
+	font-size: 16px;
+	line-height: 12px;
+}
+.sidebarleft__user__info__row.hover:hover {
+	color: #5d6062;
+}
+.sidebarleft__nav {
+	margin: 0;
+	padding: 0;
+}
+.sidebarleft__nav > li {
+	border-top: 1px solid #393a3a;
+}
+.sidebarleft__nav__a {
+	display: inline-block;
+	padding: 18px 16px 19px 16px;
+	color: #899098;
+	text-decoration: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+.sidebarleft__nav__a:hover {
+	color: #5d6062;
+}
+.sidebarleft__nav__a i {
+	display: inline-block;
+	width: 18px;
+	margin-right: 11px;
+}
+.sidebarleft__nav__a i.icon-campaign {
+	font-size: 18px;
+}
+.sidebarleft__nav__a i.icon-playground {
+	font-size: 13px;
+}
+.sidebarleft__nav__a i.icon-tasks {
+	font-size: 14px;
+}
+.sidebarleft__nav__a i.icon-favorite-bold {
+	font-size: 15px;
+}
+.sidebarleft__nav__a i.icon-news {
+	font-size: 15px;
+}
+.sidebarleft__nav__a i.icon-partners {
+	font-size: 18px;
+}
+.sidebarleft__nav__a__text {
+	display: inline-block;
+	width: 154px;
+}
+.sidebarleft__nav__a__count {
+	margin-left: 11px;
+}
+.sidebarleft__social {
+	padding: 16px 6px;
+}
+.sidebarleft__social__a {
+	height: 21px;
+	padding: 0 10px;
+	float: left;
+	color: #899098;
+	text-decoration: none;
+	border-right: 1px solid #393a3a;
+}
+.sidebarleft__social__a:hover {
+	color: #5d6062;
+}
+.sidebarleft__social__a:last-child {
+	border-right: none;
+}
+.sidebarleft__social__a i {
+	display: block;
+}
+.sidebarleft__social__a .icon-instagram {
+	font-size: 16px;
+	margin-top: 2px;
+}
+.sidebarleft__social__a .icon-facebook {
+	font-size: 16px;
+	margin-top: 2px;
+}
+.sidebarleft__social__a .icon-twitter {
+	font-size: 19px;
+	margin-top: 1px;
+}
+.sidebarleft__social__a .icon-youtube {
+	font-size: 18px;
+	margin-top: 1px;
+}
+.sidebarright {
 	width: 245px;
 	height: 100%;
 	background-color: #262727;
@@ -502,7 +717,7 @@ footer .social a:last-child {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.sidebar-right.move {
+.sidebarright.move {
 	right: 0px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -511,3 +726,122 @@ footer .social a:last-child {
 	transition: all 0.3s ease-in-out;
 }
 /* -------------------------------------- not main page (end) -------------------------------------- */
+
+
+
+
+/* -------------------------------------- Bootstrap: tooltip.js v3.3.6 (begin) -------------------------------------- */
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #90c2ff;
+  border-radius: 4px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #90c2ff;
+}
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #90c2ff;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #90c2ff;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #90c2ff;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #90c2ff;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #90c2ff;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #90c2ff;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #90c2ff;
+}
+/* -------------------------------------- Bootstrap: tooltip.js v3.3.6 (end) -------------------------------------- */
