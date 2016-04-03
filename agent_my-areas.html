@@ -74,23 +74,28 @@
 			</ul> <!-- .sidebarleft__nav -->
 		</div> <!-- .sidebarleft -->
 		<div class="content">
-			<ul class="content__tabs clearfix">
-				<li>
-					<a href="#" class="content__tabs__lnk">Все задания <span class="content__tabs__lnk__count">1000</span></a>
-				</li>
-				<li>
-					<a href="#" class="content__tabs__lnk">Выполнить <span class="content__tabs__lnk__count">1000</span></a>
-				</li>
-				<li>
-					<a href="#" class="content__tabs__lnk">Проверяется <span class="content__tabs__lnk__count">1000</span></a>
-				</li>
-				<li>
-					<a href="#" class="content__tabs__lnk">Оплачено <span class="content__tabs__lnk__count">1000</span></a>
-				</li>
-				<li>
-					<a href="#" class="content__tabs__lnk">Отклонено <span class="content__tabs__lnk__count">1000</span></a>
-				</li>
-			</ul>
+			<div class="content__tabs clearfix">
+				<ul class="content__tabs__ul clearfix">
+					<li>
+						<a href="#" class="content__tabs__ul__lnk">Все задания <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+					<li>
+						<a href="#" class="content__tabs__ul__lnk">Выполнить <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+					<li>
+						<a href="#" class="content__tabs__ul__lnk">Проверяется <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+					<li>
+						<a href="#" class="content__tabs__ul__lnk">Оплачено <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+					<li>
+						<a href="#" class="content__tabs__ul__lnk">Отклонено <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+				</ul>
+				<div class="content__tabs__btn">
+					<a href="#" class="btn blue">Добавить площадку</a>
+				</div>
+			</div>
 			<div class="content__sort">
 				<form action="">
 					<div class="content__sort__item">
@@ -101,6 +106,7 @@
 								<option value="10">20</option>
 								<option value="10">30</option>
 							</select>
+							<i class="icon icon-arrow-down-chevron"></i>
 						</div>
 					</div>
 					<div class="content__sort__item">
@@ -113,6 +119,7 @@
 								<option value="10">Цена</option>
 								<option value="10">Новые</option>
 							</select>
+							<i class="icon icon-arrow-down"></i>
 						</div>
 					</div>
 					<div class="content__sort__item">
@@ -120,6 +127,40 @@
 					</div>
 				</form>
 			</div> <!-- .content__sort -->
+			<div class="content__body">
+				<div class="content__body__areaitem instagram clearfix">
+					<div class="content__body__areaitem__photo">
+						<img src="img/areaitem-photo.jpg" alt="nameorwhat?">
+					</div>
+					<div class="content__body__areaitem__info">
+						<div class="content__body__areaitem__info__main clearfix">
+							<div class="content__body__areaitem__info__main__left">
+								left
+							</div>
+							<div class="content__body__areaitem__info__main__middle">
+								middle
+							</div>
+							<div class="content__body__areaitem__info__main__right">
+								right
+							</div>
+						</div>
+						<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
+					</div>
+				</div> <!-- .content__body__areaitem -->
+				<div class="content__body__areaitem ok">
+					.content__body__areaitem ok
+				</div> <!-- .content__body__areaitem -->
+			</div> <!-- .content__body -->
+			<div class="pagination">
+				<a href="#" class="pagination__lnk active">1</a>
+				<a href="#" class="pagination__lnk">2</a>
+				<a href="#" class="pagination__lnk">3</a>
+				<a href="#" class="pagination__lnk">4</a>
+				<a href="#" class="pagination__lnk">5</a>
+				<a href="#" class="pagination__lnk">...</a>
+				<a href="#" class="pagination__lnk">56</a>
+				<a href="#" class="pagination__lnk">57</a>
+			</div>
 		</div><!-- .content -->
 		<div class="sidebarright">
 			<div class="sidebarright__close"><i class="icon-close"></i></div>
@@ -137,6 +178,7 @@
 	<script src="js/html5shiv/respond.min.js"></script>
 	<![endif]-->
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.customSelect.min.js"></script>
 	<script src="js/bootstrap.tooltip.min.js"></script>
 	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>

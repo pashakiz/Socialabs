@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	// customSelect
+	// http://adam.co/lab/jquery/customselect/
+	// https://github.com/adamcoulombe/jquery.customSelect
+	$("select").customSelect();
+
 	// show messages
 	$(".sidebarleft__header__controls__item .icon-message").on("click", function() {
 		$(".sidebarleft__header__controls__item").removeClass("active");
