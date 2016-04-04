@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	// Удаление площадки ajax
+	$(".btn-popup-delete-area").on("click", function() {
+		console.log("ajax-delete-area-id");
+	});
+	$(".btn-popup-cancel").on("click", function() {
+		$.fancybox.close();
+	});
+	
 	// customSelect
 	// http://adam.co/lab/jquery/customselect/
 	// https://github.com/adamcoulombe/jquery.customSelect
