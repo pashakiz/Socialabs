@@ -1134,6 +1134,10 @@ footer .social a:last-child {
 	color: #899098;
 	font-size: 11px;
 	line-height: 12px;
+	white-space: pre-line;
+	overflow: hidden;
+	min-height: 24px;
+	max-height: 24px;
 }
 .chain-messages__del {
 	float: right;
