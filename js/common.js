@@ -7,6 +7,12 @@ $(document).ready(function() {
 	$(".btn-popup-cancel").on("click", function() {
 		$.fancybox.close();
 	});
+
+	// Удаление цепочки сообщений
+	$(".chain-messages__del").on("click", function() {
+		console.log("ajax-delete-chain-messages-id");
+		$(this).parent().slideUp();
+	});
 	
 	// customSelect
 	// http://adam.co/lab/jquery/customselect/

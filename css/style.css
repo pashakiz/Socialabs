@@ -78,6 +78,12 @@ body {
 .btn.blue {
 	background-color: #90c2ff;
 }
+.icon-online {
+	color: #759bc9;
+}
+.icon-online.offline {
+	color: #9b9b9b;
+}
 .header {}
 .header .header-top {
 	color: #90c2ff;
@@ -982,7 +988,9 @@ footer .social a:last-child {
 .sidebarright {
 	width: 245px;
 	height: 100%;
-	background-color: #262727;
+	background-color: #fff;
+	padding: 15px 0;
+	box-sizing: border-box;
 	position: fixed;
 	top: 0;
 	right: -245px;
@@ -991,6 +999,7 @@ footer .social a:last-child {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	overflow: scroll;
 }
 .sidebarright.move {
 	right: 0px;
@@ -999,6 +1008,120 @@ footer .social a:last-child {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+.sidebarright__close {
+	float: right;
+	margin-right: 13px;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #c8c8c8;
+	font-size: 9px;
+	width: 9px;
+	height: 9px;
+}
+.sidebarright__close:hover {
+	color: #5d6062;
+}
+.sidebarright .search {
+	margin: 13px 12px 10px;
+}
+.sidebarright .search .search-form {
+	display: block;
+	position: relative;
+}
+.sidebarright .search .search-input {
+	width: 100%;
+	border: 1px solid #e6e6e6;
+	color: #a8a8a8;
+	font-size: 12px;
+	line-height: 30px;
+	font-weight: 400;
+	padding: 0 52px 0 17px;
+	outline: none;
+	box-sizing: border-box;
+}
+.sidebarright .search .search-button {
+	outline: none;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 36px;
+	font-size: 16px;
+}
+.chain-messages {
+	height: 53px;
+	padding: 9px 12px 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.chain-messages:hover {
+	background-color: #f8f8f8;
+}
+.chain-messages__photo {
+	float: left;
+	position: relative;
+}
+.chain-messages__img {
+	width: 34px;
+	height: 34px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	border-radius: 17px;
+	overflow: hidden;
+}
+.chain-messages__img img {
+	width: 100%;
+	height: auto;
+}
+.chain-messages__photo .online {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 7px;
+	height: 7px;
+	background-color: #759bc9;
+	border: 2px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.chain-messages__photo .online.offline {
+	background-color: #9b9b9b;
+}
+.chain-messages__text {
+	float: left;
+	width: 155px;
+	margin-left: 10px;
+	font-weight: 400;
+}
+.chain-messages__name {
+	color: #90c2ff;
+	font-size: 13px;
+	margin-bottom: 3px;
+}
+.chain-messages__message {
+	color: #899098;
+	font-size: 11px;
+	line-height: 12px;
+}
+.chain-messages__del {
+	float: right;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #c8c8c8;
+	font-size: 10px;
+	margin-top: 12px;
+}
+.chain-messages__del:hover {
+	color: #5d6062;
 }
 /* -------------------------------------- not main page (end) -------------------------------------- */
 
