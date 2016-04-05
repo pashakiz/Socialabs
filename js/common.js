@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	// Native scroll with custom scrollbar
+	// https://github.com/Grsmto/simplebar
+	$(".content").simplebar({ autoHide: false });
+	$(".content").simplebar({ autoHide: false });
+
+
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
