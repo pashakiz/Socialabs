@@ -762,7 +762,7 @@ footer .social a:last-child {
 }
 .area-add__type {
 	float: left;
-	padding: 24px 0;
+	padding-top: 24px;
 }
 .area-add__help {
 	float: right;
