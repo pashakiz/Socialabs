@@ -857,6 +857,7 @@ form.area-add-type input {
 	font-size: 12px;
 	font-weight: 400;
 	color: #a8a8a8;
+	outline: none;
 }
 .area-add__btn {
 	display: block;
