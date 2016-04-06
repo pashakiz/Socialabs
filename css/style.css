@@ -1025,6 +1025,9 @@ footer .social a:last-child {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+.sidebarright__inner { /*scroller*/
+	height: 100%;
+}
 .sidebarright .simplebar-scroll-content {
 	padding: 15px 5px 15px 0;
 }
@@ -1151,6 +1154,155 @@ footer .social a:last-child {
 }
 .chain-messages__del:hover {
 	color: #5d6062;
+}
+.chain-messages-dialog {
+	display: none;
+	width: 340px;
+	position: absolute;
+	left: -347px;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 600;
+	-webkit-box-shadow: -3px 3px 9px 0px rgba(184, 184, 184, 1);
+	-moz-box-shadow:    -3px 3px 9px 0px rgba(184, 184, 184, 1);
+	box-shadow:         -3px 3px 9px 0px rgba(184, 184, 184, 1);
+}
+.chain-messages-dialog__header {
+	padding: 0 16px;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #fff;
+	background-color: #68acff;
+}
+.chain-messages-dialog__header .btn-dialog-close {
+	float: right;
+	font-size: 11px;
+	outline: none;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	margin-top: 15px;
+	margin-right: 2px;
+}
+.chain-messages-dialog__messages {
+	height: 200px;
+	background-color: #fff;
+}
+.sidebarright .chain-messages-dialog__messages .simplebar-scroll-content {
+	padding: 0;
+}
+.chain-messages-dialog__messages-inner {
+	padding: 0 21px 13px 16px;
+}
+.chain-messages-dialog__messages .message {
+	margin-top: 15px;
+}
+.chain-messages-dialog__messages .message__photo {
+	float: left;
+	position: relative;
+}
+.chain-messages-dialog__messages .message__img {
+	width: 34px;
+	height: 34px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	border-radius: 17px;
+	overflow: hidden;
+}
+.chain-messages-dialog__messages .message__img img {
+	width: 100%;
+	height: auto;
+}
+.chain-messages-dialog__messages .message__photo .online {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 7px;
+	height: 7px;
+	background-color: #759bc9;
+	border: 2px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.chain-messages-dialog__messages .message__photo .online.offline {
+	background-color: #9b9b9b;
+}
+.chain-messages-dialog__messages .message__info {
+	float: right;
+}
+.chain-messages-dialog__messages .message__text {
+	width: 251px;
+	position: relative;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	padding: 8px 12px 9px;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	color: #606060;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.chain-messages-dialog__messages .message__text.my {
+	background-color: #fafafa;
+}
+.chain-messages-dialog__messages .message__text:after,
+.chain-messages-dialog__messages .message__text:before {
+	right: 100%;
+	top: 17px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.chain-messages-dialog__messages .message__text:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.chain-messages-dialog__messages .message__text:before {
+	border-color: rgba(230, 230, 230, 0);
+	border-right-color: #e6e6e6;
+	border-width: 6px;
+	margin-top: -6px;
+}
+.chain-messages-dialog__messages .message__date {
+	padding-top: 4px; 
+	text-align: right;
+	color: #b8b8b8;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.chain-messages-dialog__textarea-container {
+	width: 100%;
+	height: 42px;
+	overflow: hidden;
+}
+.chain-messages-dialog__textarea-container form {
+	height: 100%;
+}
+.chain-messages-dialog__textarea {
+	width: 360px;
+	height: 100%;
+	padding: 15px 17px 12px;
+	border: none;
+	border-top: 1px solid #f2f2f2;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	color: #606060;
+	outline: none;
+	box-sizing: border-box;
+	resize: none;
 }
 /* -------------------------------------- not main page (end) -------------------------------------- */
 

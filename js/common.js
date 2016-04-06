@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
 	// Native scroll with custom scrollbar
+	// init in HTML: data-simplebar-direction="vertical"
 	// https://github.com/Grsmto/simplebar
 	$(".content").simplebar({ autoHide: false });
-	$(".content").simplebar({ autoHide: false });
-
+	$(".sidebarright__inner").simplebar();
+	$(".chain-messages-dialog__messages").simplebar();
+	// $(".chain-messages-dialog__textarea").simplebar();
 
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
@@ -18,6 +20,16 @@ $(document).ready(function() {
 	$(".chain-messages__del").on("click", function() {
 		console.log("ajax-delete-chain-messages-id");
 		$(this).parent().slideUp();
+	});
+
+	// Показ диалога сообщений
+	$(".chain-messages").on("click", function() {
+		console.log("ajax-show-chain-messages-id");
+		$(".chain-messages-dialog").show();
+	});
+	// Скрыть диалог сообщений
+	$(".btn-dialog-close").on("click", function() {
+		$(".chain-messages-dialog").hide();
 	});
 	
 	// customSelect
