@@ -31,6 +31,22 @@ $(document).ready(function() {
 	$(".btn-dialog-close").on("click", function() {
 		$(".chain-messages-dialog").hide();
 	});
+
+	//Custom RadioButtons
+	$(".radiobutton").click(function(){
+		// обнуляем все радиобатоны и кастомные иконки
+		$(".radiobutton").children(":radio").prop("checked", false);
+		$(".radiobutton").children(".icon-radiobutton").removeClass("checked");
+		// устанавливаем текущий RB в checked
+		$(this).children(":radio").prop("checked", true);
+		$(this).children(".icon-radiobutton").addClass("checked");
+		//show additional input for Google+
+		if ( $(this).hasClass("add-input") ) {
+			$(".area-add__added-input").slideDown();
+		} else {
+			$(".area-add__added-input").slideUp();
+		}
+	});
 	
 	// customSelect
 	// http://adam.co/lab/jquery/customselect/
