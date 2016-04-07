@@ -453,7 +453,7 @@ footer .social a:last-child {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.content .simplebar-scroll-content {
+.content__inner {
 	padding: 6px 13px 43px 6px;
 }
 .content .simplebar-track {
@@ -1225,9 +1225,10 @@ form.area-add-type input {
 	transition: all 0.3s ease-in-out;
 }
 .sidebarright__inner { /*scroller*/
+	width: 245px;
 	height: 100%;
 }
-.sidebarright .simplebar-scroll-content {
+.sidebarright__inner-padding {
 	padding: 15px 5px 15px 0;
 }
 .sidebarright .simplebar-track {
@@ -1389,6 +1390,7 @@ form.area-add-type input {
 	margin-right: 2px;
 }
 .chain-messages-dialog__messages {
+	width: 340px;
 	height: 200px;
 	background-color: #fff;
 }
