@@ -863,8 +863,89 @@ form.area-add-type input {
 	display: block;
 	margin-top: 8px;
 }
+.agent-tasks {}
+.agent-task {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	padding: 18px 20px 14px 41px;
+	margin-bottom: 6px;
+}
+.agent-task:last-child {
+	margin-bottom: 0;
+}
+.agent-task__info {
+	float: left;
+	width: 30%;
+	min-width: 260px;
+	margin-right: 10%;
+	position: relative;
+}
+.agent-task__info .icon {
+	color: #7fabdf;
+	font-size: 16px;
+	position: absolute;
+	left: -25px;
+	top: 0;
+}
+.agent-task__name {
+	display: block;
+	color: #315bb7;
+	font-size: 15px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+.agent-task__name:hover {
+	text-decoration: underline;
+}
+.agent-task__text {
+	display: block;
+	display: -webkit-box;
+	color: #727272;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 400;
+	height: 30px;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+.agent-task__details {
+	float: left;
+	margin-right: 5%;
+	padding-top: 8px;
+	min-width: 55px;
+}
+.agent-task__details-title {
+	font-size: 12px;
+	color: #888888;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.agent-task__details-value {
+	color: #5473b7;
+	font-size: 11px;
+	font-weight: 400;
+}
+.agent-task__status {
+	float: right;
+}
+.agent-task__status-btn {
+	margin: 10px 1px 0 0;
+	padding: 0;
+}
+.agent-task__status-text {
+	font-size: 11px;
+	color: #a6a6a6;
+	font-weight: 400;
+	margin-top: 18px;
+}
 .pagination {
-	margin-top: 16px;
+	margin: 16px 0 0 16px;
 }
 .pagination__lnk {
 	color: #5473b7;
@@ -877,12 +958,13 @@ form.area-add-type input {
 	display: inline-block;
 	text-align: center;
 }
-.pagination__lnk:hover {
-	color: #90c2ff;
-}
 .pagination__lnk.active {
 	background-color: #90c2ff;
 	color: #fff;
+}
+.pagination__lnk:hover {
+	color: #fff;
+	background-color: #add2ff;
 }
 .sidebarleft {
 	height: 100%;
@@ -1251,13 +1333,17 @@ form.area-add-type input {
 	margin-bottom: 3px;
 }
 .chain-messages__message {
+	display: block;
+	display: -webkit-box;
 	color: #899098;
 	font-size: 11px;
 	line-height: 12px;
 	white-space: pre-line;
 	overflow: hidden;
-	min-height: 24px;
-	max-height: 24px;
+	height: 24px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
 }
 .chain-messages__del {
 	float: right;

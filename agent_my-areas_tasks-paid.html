@@ -78,76 +78,176 @@
 			<div class="content__tabs clearfix">
 				<ul class="content__tabs__ul clearfix">
 					<li>
-						<a href="#" class="content__tabs__ul__lnk">Все задания <span class="content__tabs__ul__lnk__count">1000</span></a>
+						<a href="agent_my-areas_tasks-all.html" class="content__tabs__ul__lnk">Все задания <span class="content__tabs__ul__lnk__count">1000</span></a>
 					</li>
 					<li>
-						<a href="#" class="content__tabs__ul__lnk">Выполнить <span class="content__tabs__ul__lnk__count">1000</span></a>
+						<a href="agent_my-areas_tasks-todo.html" class="content__tabs__ul__lnk">Выполнить <span class="content__tabs__ul__lnk__count">1000</span></a>
 					</li>
 					<li>
-						<a href="#" class="content__tabs__ul__lnk">Проверяется <span class="content__tabs__ul__lnk__count">1000</span></a>
+						<a href="agent_my-areas_tasks-checking.html" class="content__tabs__ul__lnk">Проверяется <span class="content__tabs__ul__lnk__count">1000</span></a>
+					</li>
+					<li class="active">
+						<a href="agent_my-areas_tasks-paid.html" class="content__tabs__ul__lnk">Оплачено <span class="content__tabs__ul__lnk__count">1000</span></a>
 					</li>
 					<li>
-						<a href="#" class="content__tabs__ul__lnk">Оплачено <span class="content__tabs__ul__lnk__count">1000</span></a>
-					</li>
-					<li>
-						<a href="#" class="content__tabs__ul__lnk">Отклонено <span class="content__tabs__ul__lnk__count">1000</span></a>
+						<a href="agent_my-areas_tasks-declined.html" class="content__tabs__ul__lnk">Отклонено <span class="content__tabs__ul__lnk__count">1000</span></a>
 					</li>
 				</ul>
 			</div>
 			<div class="content__body">
-				<div class="area-add">
-					<div class="area-add__header">Добавление площадки:</div>
-					<div class="area-add__body clearfix">
-						<div class="area-add__type">
-							<form class="area-add-type" method="post" action="">
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="youtube" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-youtube"></i>YouTube</span>
-								</div>
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="ok" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-ok"></i>Odnoklassniki</span>
-								</div>
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="instagram" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-instagram"></i>Instagram</span>
-								</div>
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="twitter" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-twitter"></i>Twitter</span>
-								</div>
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="vk" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-vk"></i>Vkontakte</span>
-								</div>
-								<div class="radiobutton add-input">
-									<input class="rb" type="radio" name="areatype" value="googleplus" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-googleplus"></i>Google +</span>
-								</div>
-								<div class="radiobutton">
-									<input class="rb" type="radio" name="areatype" value="facebook" style="display: none;">
-									<i class="radiobutton__icon icon-radiobutton"></i>
-									<span class="radiobutton__title"><i class="icon-facebook"></i>Facebook</span>
-								</div>
-								<input type="text" class="area-add__added-input" placeholder="Добавьте ссылку на сообщество" style="display: none;">
-								<button class="btn-inner area-add__btn" type="submit">Выгрузить</button>
-							</form>
+				<div class="agent-tasks">
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-instagram"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
 						</div>
-						<div class="area-add__help">
-							<div class="area-add__help-row">Подсказка</div>
-							<div class="area-add__help-row"><a href="#">Как добавить площадку?</a></div>
-							<div class="area-add__help-row"><a href="#">Как выполнить задание?</a></div>
-							<div class="area-add__help-row"><a href="#">Что такое охват рекламы?</a></div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
 						</div>
-					</div>
-				</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">Навсегда</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-twitter"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">24 часа</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-youtube"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">Навсегда</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-vk"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">24 часа</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-ok"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">Навсегда</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-facebook"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">24 часа</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+					<div class="agent-task clearfix">
+						<div class="agent-task__info">
+							<i class="icon icon-googleplus"></i>
+							<a class="agent-task__name" href="#taskviewpage" title="Разместить нашу рекламу у вас и дальше длинный текст, который не поместился">Разместить нашу рекламу у вас и дальше длинный текст, который не поместился</a>
+							<div class="agent-task__text">Активный цитатник с адекватной ценой за размещение поста. Услуги, или даже другое что дальше длинный текст, который не поместился</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Отклики</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;откликов">120000000</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Срок</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Срок&nbsp;размещения">Навсегда</div>
+						</div>
+						<div class="agent-task__details">
+							<div class="agent-task__details-title">Сумма</div>
+							<div class="agent-task__details-value" data-toggle="tooltip" data-placement="bottom" title="Сумма&nbsp;вознаграждения">120000000</div>
+						</div>
+						<div class="agent-task__status"></div>
+					</div> <!-- .agent-task -->
+				</div> <!-- .agent-tasks -->
 			</div> <!-- .content__body -->
+			<div class="pagination">
+				<a href="#" class="pagination__lnk active">1</a>
+				<a href="#" class="pagination__lnk">2</a>
+				<a href="#" class="pagination__lnk">3</a>
+				<a href="#" class="pagination__lnk">4</a>
+				<a href="#" class="pagination__lnk">5</a>
+				<a href="#" class="pagination__lnk">...</a>
+				<a href="#" class="pagination__lnk">56</a>
+				<a href="#" class="pagination__lnk">57</a>
+			</div>
 		</div><!-- .content -->
 		<div class="sidebarright">
 			<div class="sidebarright__inner clearfix" data-simplebar-direction="vertical">
