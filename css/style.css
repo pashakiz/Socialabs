@@ -593,14 +593,23 @@ footer .social a:last-child {
 	width: 23%;
 }
 .content__body__areaitem__info__main__left__title {
+	display: block;
 	font-size: 16px;
+	line-height: 18px;
 	font-weight: 500;
 	color: #315bb7;
+	text-decoration: none;
+	position: relative;
+	margin-left: 20px;
+}
+.content__body__areaitem__info__main__left__title:hover {
+	text-decoration: underline;
 }
 .content__body__areaitem__info__main__left__title .icon {
 	color: #7fabdf;
 	font-size: 16px;
-	margin-right: 4px;
+	position: absolute;
+	left: -20px;
 }
 .content__body__areaitem__info__main__left__online {
 	color: #888888;
