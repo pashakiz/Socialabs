@@ -8,28 +8,17 @@ $(document).ready(function() {
 	$(".chain-messages-dialog__messages").simplebar();
 	// $(".chain-messages-dialog__textarea").simplebar();
 
+	// Расширенные настройки поиска площадок
+	$(".btn-advanced-settings").on("click", function() {
+		$(".search-areas__row_hidden").slideToggle();
+	});
+
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
 	});
 	$(".btn-popup-cancel").on("click", function() {
 		$.fancybox.close();
-	});
-
-	// Удаление цепочки сообщений
-	$(".chain-messages__del").on("click", function() {
-		console.log("ajax-delete-chain-messages-id");
-		$(this).parent().slideUp();
-	});
-
-	// Показ диалога сообщений
-	$(".chain-messages").on("click", function() {
-		console.log("ajax-show-chain-messages-id");
-		$(".chain-messages-dialog").show();
-	});
-	// Скрыть диалог сообщений
-	$(".btn-dialog-close").on("click", function() {
-		$(".chain-messages-dialog").hide();
 	});
 
 	//Custom RadioButtons
@@ -77,6 +66,20 @@ $(document).ready(function() {
 			$(this).parent().removeClass("active");
 		}
 	});
+	// Показ диалога сообщений
+	$(".chain-messages").on("click", function() {
+		console.log("ajax-show-chain-messages-id");
+		$(".chain-messages-dialog").show();
+	});
+	// Скрыть диалог сообщений
+	$(".btn-dialog-close").on("click", function() {
+		$(".chain-messages-dialog").hide();
+	});
+	// Удаление цепочки сообщений
+	$(".chain-messages__del").on("click", function() {
+		console.log("ajax-delete-chain-messages-id");
+		$(this).parent().slideUp();
+	});
 
 	// Bootstrap: tooltip.js v3.3.6 http://getbootstrap.com/javascript/#tooltip
 	$('[data-toggle="tooltip"]').tooltip();
@@ -89,9 +92,11 @@ $(document).ready(function() {
 	//Документация: http://fancyapps.com/fancybox/
 	//<a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a>
 	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+		padding: 0
+	});
 
-	//Плавный скролл до блока
+	//Плавный скролл до блока on index page
 	//Документация: https://github.com/flesler/jquery.scrollTo
 	$("a.howitworkslnk").on("click", function() {
 		$.scrollTo($("#howitworks"), 800, {

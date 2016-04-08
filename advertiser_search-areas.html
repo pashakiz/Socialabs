@@ -44,24 +44,27 @@
 			</div> <!-- .sidebarleft__header -->
 			<div class="sidebarleft__user clearfix">
 				<div class="sidebarleft__user__avatar">
-					<img src="img/user-0002-ava-small.jpg" alt="urermane">
+					<img src="img/user-0001-ava-small.jpg" alt="urermane">
 				</div>
 				<div class="sidebarleft__user__info">
-					<div class="sidebarleft__user__info__role">Агент влияния</div>
-					<div class="sidebarleft__user__info__row"><i class="icon-online"></i>agent_vliyaniya</div>
+					<div class="sidebarleft__user__info__role">Рекламодатель</div>
+					<div class="sidebarleft__user__info__row"><i class="icon-online"></i>lilia_veshena</div>
 					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Баланс"><i class="icon-balance"></i>20 р.</a>
 					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Заработано"><i class="icon-balance-earned"></i>50000000 р.</a>
 				</div>
 			</div> <!-- .sidebarleft__user -->
 			<ul class="sidebarleft__nav">
 				<li>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-campaign"></i><span class="sidebarleft__nav__a__text">Компании</span><span class="sidebarleft__nav__a__count">7</span></a>
+				</li>
+				<li>
 					<a href="#" class="sidebarleft__nav__a"><i class="icon-playground"></i>Площадки</a>
 				</li>
 				<li>
-					<a href="#" class="sidebarleft__nav__a"><i class="icon-tasks"></i><span class="sidebarleft__nav__a__text">Задания</span><span class="sidebarleft__nav__a__count">99</span></a>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-favorite-bold"></i>Избранное</a>
 				</li>
 				<li>
-					<a href="#" class="sidebarleft__nav__a"><i class="icon-news"></i><span class="sidebarleft__nav__a__text">Новости</span><span class="sidebarleft__nav__a__count">5</span></a>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-news"></i><span class="sidebarleft__nav__a__text">Новости</span><span class="sidebarleft__nav__a__count">99</span></a>
 				</li>
 				<li>
 					<a href="#" class="sidebarleft__nav__a"><i class="icon-partners"></i>Партнерская программа</a>
@@ -79,25 +82,91 @@
 				<div class="content__tabs clearfix">
 					<ul class="content__tabs__ul clearfix">
 						<li>
-							<a href="agent_my-areas_tasks-all.html" class="content__tabs__ul__lnk">Все задания <span class="content__tabs__ul__lnk__count">1000</span></a>
+							<a href="advertiser_campaigns_active.html" class="content__tabs__ul__lnk">Активные кампании <span class="content__tabs__ul__lnk__count">1000</span></a>
 						</li>
 						<li>
-							<a href="agent_my-areas_tasks-todo.html" class="content__tabs__ul__lnk">Выполнить <span class="content__tabs__ul__lnk__count">1000</span></a>
-						</li>
-						<li>
-							<a href="agent_my-areas_tasks-checking.html" class="content__tabs__ul__lnk">Проверяется <span class="content__tabs__ul__lnk__count">1000</span></a>
-						</li>
-						<li>
-							<a href="agent_my-areas_tasks-paid.html" class="content__tabs__ul__lnk">Оплачено <span class="content__tabs__ul__lnk__count">1000</span></a>
-						</li>
-						<li>
-							<a href="agent_my-areas_tasks-declined.html" class="content__tabs__ul__lnk">Отклонено <span class="content__tabs__ul__lnk__count">1000</span></a>
+							<a href="advertiser_campaigns_archive.html" class="content__tabs__ul__lnk">Архивные рекламные записи <span class="content__tabs__ul__lnk__count">1000</span></a>
 						</li>
 					</ul>
-					<div class="content__tabs__btn">
-						<a href="#" class="btn blue btn-inner">Добавить площадку</a>
-					</div>
 				</div>
+				<div class="content__search-areas">
+					<form class="search-areas" action="" method="post">
+						<div class="search-areas__header">Поиск площадок:</div>
+						<div class="search-areas__row clearfix">
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Социальная сеть</div>
+								<div class="search-areas__rowblock-select select-container">
+									<select name="areatype">
+										<option value="youtube">youtube.com</option>
+										<option value="vk">vk.com</option>
+										<option value="ok">ok.ru</option>
+										<option value="instagram">instagram.com</option>
+										<option value="facebook">facebook.com</option>
+										<option value="twitter">twitter.com</option>
+										<option value="googleplus">plus.google.com</option>
+									</select>
+									<i class="icon icon-arrow-down-chevron"></i>
+								</div>
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Тип рекламы</div>
+								<div class="search-areas__rowblock-select select-container">
+									<select name="areatype">
+										<option value="youtube">Текст в описании к видео</option>
+										<option value="vk">Преролл</option>
+										<option value="ok">Брэндированный ролик</option>
+									</select>
+									<i class="icon icon-arrow-down-chevron"></i>
+								</div>
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Рекламная запись</div>
+								<div class="search-areas__rowblock-select select-container">
+									<select name="areatype">
+										<option value="youtube">Жили были</option>
+										<option value="vk">Самые лучшие рецепты</option>
+										<option value="ok">Было не было</option>
+										<option value="ok">Анекдоты за 50</option>
+										<option value="ok">Очень длинное название рекламмной записи, которое может придумать какой-то мудак</option>
+									</select>
+									<i class="icon icon-arrow-down-chevron"></i>
+								</div>
+							</div> <!-- .search-areas__rowblock -->
+						</div> <!-- .search-areas__row -->
+						<div class="search-areas__row clearfix">
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Тематика площадки</div>
+								<a class="search-areas__rowblock-opencheckbox fancybox" href="#areatopics">
+									Выбрать<i class="icon icon-arrow-down-chevron"></i>
+								</a>
+								<div id="areatopics" class="popup">
+									<div class="areatopics-popup__header">Тематика:</div>
+									<div class="areatopics-popup__body">2 колонки чекбоксов</div>
+									<div class="areatopics-popup__footer">
+										<button class="areatopics-popup__btn-ok btn-inner">Выбрано</button>
+									</div>
+								</div> <!-- #areatopics.popup -->
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Ключевые слова</div>
+								<input class="search-areas__rowblock-input" type="text" name="keywords" placeholder="Введите ключевое слово или адрес">
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__row-inner-clrfx clearfix">
+								<div class="search-areas__row-inner"><выбранные чекбоксы с крестиком></div>
+							</div>
+						</div> <!-- .search-areas__row -->
+						<div class="search-areas__row clearfix">
+							row
+						</div> <!-- .search-areas__row -->
+						<div class="search-areas__row search-areas__row_hidden clearfix">
+							row-hidden
+						</div> <!-- .search-areas__row -->
+						<div class="search-areas__row clearfix">
+							<button class="btn-inner" type="submit">Подобрать площадки</button>
+							<button class="btn-advanced-settings" type="button">Расширенные настройки</button>
+						</div> <!-- .search-areas__row -->
+					</form>
+				</div> <!-- .content__search-areas -->
 				<div class="content__sort">
 					<form action="">
 						<div class="content__sort__item">
@@ -125,7 +194,7 @@
 							</div>
 						</div>
 						<div class="content__sort__item">
-							<a class="content__sort__item__btn-lnk fancybox" href="#btnlnk"><i class="icon-link2"></i></a>
+							<button class="content__sort__item__btn-lnk xls">xls</button>
 						</div>
 					</form>
 				</div> <!-- .content__sort -->
@@ -137,7 +206,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-instagram"></i>Не верь не бойся не</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не instagram</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -173,7 +242,8 @@
 									<div class="content__body__areaitem__info__item">
 										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
 										<div class="content__body__areaitem__info__item__row item__row__right">
-											<a href="#" class="btn-icon" data-toggle="tooltip" data-placement="left" title="Активировать"><i class="icon-activate"></i></a>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
 										</div>
 									</div>
 								</div>
@@ -188,7 +258,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-ok"></i>Не верь не бойся не</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не ok</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon icon-online"></i>Online</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -215,9 +285,10 @@
 								</div>
 								<div class="content__body__areaitem__info__main__right">
 									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Статус:</div>
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
 										<div class="content__body__areaitem__info__item__row item__row__right">
-											<div class="btn-icon" data-toggle="tooltip" data-placement="left" title="Площадка&nbsp;на&nbsp;модерации"><i class="icon-manager"></i></div>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
 										</div>
 									</div>
 								</div>
@@ -232,7 +303,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-youtube"></i>Youtube: Брэндированный ролик</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Youtube: Брэндированный ролик</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -264,7 +335,15 @@
 										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Заработано">120000000 р.</div>
 									</div>
 								</div>
-								<div class="content__body__areaitem__info__main__right"></div>
+								<div class="content__body__areaitem__info__main__right">
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
+										<div class="content__body__areaitem__info__item__row item__row__right">
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
 						</div>
@@ -276,7 +355,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-youtube"></i>Youtube: Преролл</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Youtube: Преролл</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -308,7 +387,15 @@
 										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Заработано">120000000 р.</div>
 									</div>
 								</div>
-								<div class="content__body__areaitem__info__main__right"></div>
+								<div class="content__body__areaitem__info__main__right">
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
+										<div class="content__body__areaitem__info__item__row item__row__right">
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
 						</div>
@@ -320,7 +407,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-youtube"></i>Youtube: Текстовая реклама</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Youtube: Текстовая реклама</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -350,7 +437,15 @@
 										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Заработано">120000000 р.</div>
 									</div>
 								</div>
-								<div class="content__body__areaitem__info__main__right"></div>
+								<div class="content__body__areaitem__info__main__right">
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
+										<div class="content__body__areaitem__info__item__row item__row__right">
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
 						</div>
@@ -362,7 +457,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-vk"></i>Не верь не бойся не</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не vk</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -400,16 +495,10 @@
 								</div>
 								<div class="content__body__areaitem__info__main__right">
 									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Статус:</div>
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
 										<div class="content__body__areaitem__info__item__row item__row__right">
-											<div class="mod-status">
-												Отклонено
-												<div class="mod-status__tooltip">
-													<div class="mod-status__tooltip__inner">
-														Причина отклонения:<br>- не выполнен пункт 3.<br><a href="help.html">Подробнее</a>. <button class="btn">На модерацию</button>
-													</div>
-												</div> <!-- .mod-status__tooltip -->
-											</div> <!-- .mod-status -->
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
 										</div>
 									</div>
 								</div>
@@ -424,7 +513,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-twitter"></i>Не верь не бойся не</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не twitter</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -447,9 +536,10 @@
 								</div>
 								<div class="content__body__areaitem__info__main__right">
 									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Статус:</div>
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
 										<div class="content__body__areaitem__info__item__row item__row__right">
-											<div class="btn-icon" data-toggle="tooltip" data-placement="left" title="Площадка&nbsp;на&nbsp;модерации"><i class="icon-manager"></i></div>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
 										</div>
 									</div>
 								</div>
@@ -464,51 +554,7 @@
 						<div class="content__body__areaitem__info">
 							<div class="content__body__areaitem__info__main clearfix">
 								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-googleplus"></i>Не верь не бойся не</a>
-									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
-									<div class="content__body__areaitem__info__main__left__btns">
-										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
-										<a class="content__body__areaitem__info__main__left__btns__a fancybox" href="#delete-area" data-toggle="tooltip" data-placement="bottom" title="Удалить площадку"><i class="icon icon-delete"></i></a>
-									</div>
-								</div>
-								<div class="content__body__areaitem__info__main__middle clearfix">
-									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Участников</div>
-										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;подписчиков">120000000</div>
-									</div>
-									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Охват</div>
-										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Охват&nbsp;рекламы">120000000</div>
-									</div>
-									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Цена</div>
-										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Стоимость&nbsp;размещенгия&nbsp;за&nbsp;24&nbsp;часа">120000000</div>
-									</div>
-									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Заработано</div>
-										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Заработано">120000000 р.</div>
-									</div>
-								</div>
-								<div class="content__body__areaitem__info__main__right">
-									<div class="content__body__areaitem__info__item">
-										<div class="content__body__areaitem__info__item__row item__row__title">Статус:</div>
-										<div class="content__body__areaitem__info__item__row item__row__right">
-											<div class="btn-icon" data-toggle="tooltip" data-placement="left" title="Площадка&nbsp;на&nbsp;модерации"><i class="icon-manager"></i></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
-						</div>
-					</div> <!-- .content__body__areaitem -->
-					<div class="content__body__areaitem facebook clearfix">
-						<div class="content__body__areaitem__photo">
-							<img src="img/areaitem-photo.jpg" alt="nameorwhat?">
-						</div>
-						<div class="content__body__areaitem__info">
-							<div class="content__body__areaitem__info__main clearfix">
-								<div class="content__body__areaitem__info__main__left">
-									<a class="content__body__areaitem__info__main__left__title" href="#"><i class="icon icon-facebook"></i>Не верь не бойся не</a>
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не google+</a>
 									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
 									<div class="content__body__areaitem__info__main__left__btns">
 										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
@@ -537,7 +583,53 @@
 									<div class="content__body__areaitem__info__item">
 										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
 										<div class="content__body__areaitem__info__item__row item__row__right">
-											<a href="#" class="btn-icon" data-toggle="tooltip" data-placement="left" title="Активировать"><i class="icon-activate"></i></a>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content__body__areaitem__info__descr">Описание:<br>Активный цитатник с адекватной ценой за размещение поста. Успей заказать рекламу до конца февраля с хорошей скидкой.</div>
+						</div>
+					</div> <!-- .content__body__areaitem -->
+					<div class="content__body__areaitem facebook clearfix">
+						<div class="content__body__areaitem__photo">
+							<img src="img/areaitem-photo.jpg" alt="nameorwhat?">
+						</div>
+						<div class="content__body__areaitem__info">
+							<div class="content__body__areaitem__info__main clearfix">
+								<div class="content__body__areaitem__info__main__left">
+									<a class="content__body__areaitem__info__main__left__title no-icon" href="#">Не верь не бойся не facebook</a>
+									<div class="content__body__areaitem__info__main__left__online"><i class="icon offline icon-online"></i>3 дня назад</div>
+									<div class="content__body__areaitem__info__main__left__btns">
+										<a class="content__body__areaitem__info__main__left__btns__a" href="#" data-toggle="tooltip" data-placement="bottom" title="Редактровать площадку"><i class="icon icon-edit"></i></a>
+										<a class="content__body__areaitem__info__main__left__btns__a fancybox" href="#delete-area" data-toggle="tooltip" data-placement="bottom" title="Удалить площадку"><i class="icon icon-delete"></i></a>
+									</div>
+								</div>
+								<div class="content__body__areaitem__info__main__middle clearfix">
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Участников</div>
+										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Количество&nbsp;подписчиков">120000000</div>
+									</div>
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Охват</div>
+										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Охват&nbsp;рекламы">120000000</div>
+									</div>
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Цена</div>
+										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Стоимость&nbsp;размещенгия&nbsp;за&nbsp;24&nbsp;часа">120000000</div>
+									</div>
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Заработано</div>
+										<div class="content__body__areaitem__info__item__row" data-toggle="tooltip" data-placement="bottom" title="Заработано">120000000 р.</div>
+									</div>
+								</div>
+								<div class="content__body__areaitem__info__main__right">
+									<div class="content__body__areaitem__info__item">
+										<div class="content__body__areaitem__info__item__row item__row__title">Управление:</div>
+										<div class="content__body__areaitem__info__item__row item__row__right">
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Заказать&nbsp;размещение"><i class="icon-accept"></i></button>
+											<button class="btn-icon" data-toggle="tooltip" data-placement="left" title="Добавить&nbsp;в&nbsp;избранное"><i class="icon-favorite-bold"></i></button>
 										</div>
 									</div>
 								</div>
@@ -828,15 +920,6 @@
 				</div>
 			</div>
 		</div> <!-- .sidebarright -->
-	</div>
-	<div id="btnlnk" class="popup">
-		<div class="form-title">Ссылка&nbsp;для&nbsp;рекламодателя</div>
-		<a href="http://socadvert.ru/link/gazeface">http://socadvert.ru/link/gazeface</a>
-	</div>
-	<div id="delete-area" class="popup">
-		<div class="form-title">Удаление площадки</div>
-		<p>Вы собираетесь удалить площадку "Лучшие рецепты"?</p>
-		<button class="btn-popup-delete-area btn-inner">Да</button><button class="btn-popup-cancel btn-inner">Отмена</button>
 	</div>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
