@@ -493,12 +493,6 @@ form input {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.content a {
-	color: #7fabdf;
-}
-.content a:hover {
-	color: #4995f2;
-}
 .content__inner {
 	padding: 6px 13px 43px 6px;
 }
@@ -773,6 +767,9 @@ form input {
 	color: #7fabdf;
 	text-decoration: none;
 	margin-right: 10px;
+}
+.content__body__areaitem__info__main__left__btns__a:hover {
+	color: #4995f2;
 }
 .content__body__areaitem__info__main__left__btns__a:last-child {
 	margin-right: 0;
