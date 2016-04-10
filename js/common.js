@@ -22,7 +22,7 @@ $(document).ready(function() {
 	});
 
 	//Custom RadioButtons
-	$(".radiobutton").click(function(){
+	$(".radiobutton").on("click", function() {
 		// обнуляем все радиобатоны и кастомные иконки
 		$(".radiobutton").children(":radio").prop("checked", false);
 		$(".radiobutton").children(".icon-radiobutton").removeClass("checked");
@@ -35,6 +35,64 @@ $(document).ready(function() {
 		} else {
 			$(".area-add__added-input").slideUp();
 		}
+	});
+
+	// Custom CheckBoxes (default)
+	$(".checkbox_default").on("click", function() {
+		// var current_checkbox = $(this).children(":checkbox");
+		// if (current_checkbox.prop("checked")) {
+		// 	// Снимаем отметку с checkbox'а
+		// 	current_checkbox.prop("checked", false);
+		// 	// добавляем нужный класс иконке
+		// 	$(this).children(".checkbox__icon").removeClass("icon-check-box");
+		// 	$(this).children(".checkbox__icon").addClass("icon-check-box-unchecked");
+		// } else {
+		// 	// Снимаем отметку с checkbox'а
+		// 	current_checkbox.prop("checked", true);
+		// 	// добавляем нужный класс иконке
+		// 	$(this).children(".checkbox__icon").removeClass("icon-check-box-unchecked");
+		// 	$(this).children(".checkbox__icon").addClass("icon-check-box");
+		// };
+	});
+
+	// Select areatopics: Custom CheckBoxes (multiselect)
+	$(".checkbox_multiselect").on("click", function() {
+		var current_checkbox = $(this).children(":checkbox");
+		if (current_checkbox.prop("checked")) {
+			// Снимаем отметку с checkbox'а
+			current_checkbox.prop("checked", false);
+			// remove icon
+			$(this).children(".checkbox__icon").removeClass("icon-accept");
+		} else {
+			// Снимаем отметку с checkbox'а
+			current_checkbox.prop("checked", true);
+			// add icon
+			$(this).children(".checkbox__icon").addClass("icon-accept");
+		};
+	});
+	// Add areatopics: Custom CheckBoxes multiselect submit
+	$(".areatopics-popup__btn-ok").on("click", function() {
+		var html1 = "<div class='checkbox checkbox_multiselect-true' data-checkbox-multiselect-value='",
+			html2 = "'><span class='checkbox__title'>",
+			html3 = "</span><i class='checkbox__icon icon-close'></i></div>",
+			out = "";
+
+		$(".checkbox_multiselect").children(":checkbox:checked").each(function(){ // only checked checkboxes
+			var value = $(this).val(),
+				text = $(this).parent().children(".checkbox__title").text();
+
+			out += html1 + value + html2 + text + html3;
+		});
+
+		$(".search-areas__row-inner_cbms-true").html(out);
+		$.fancybox.close();
+	});
+	// Remove areatopics: Custom CheckBoxes .checkbox_multiselect-true (multiselect remove)
+	$(".search-areas__row-inner_cbms-true").on("click", ".checkbox_multiselect-true", function() {
+		var chekbox_value = $(this).attr('data-checkbox-multiselect-value');
+		$("input[value='"+chekbox_value+"']").prop("checked", false);
+		$("input[value='"+chekbox_value+"']").parent().children(".checkbox__icon").removeClass("icon-accept");
+		$(this).remove();
 	});
 	
 	// customSelect
