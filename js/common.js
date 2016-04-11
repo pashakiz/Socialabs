@@ -71,20 +71,17 @@ $(document).ready(function() {
 
 	// Custom CheckBoxes (default)
 	$(".checkbox_default").on("click", function() {
-		// var current_checkbox = $(this).children(":checkbox");
-		// if (current_checkbox.prop("checked")) {
-		// 	// Снимаем отметку с checkbox'а
-		// 	current_checkbox.prop("checked", false);
-		// 	// добавляем нужный класс иконке
-		// 	$(this).children(".checkbox__icon").removeClass("icon-check-box");
-		// 	$(this).children(".checkbox__icon").addClass("icon-check-box-unchecked");
-		// } else {
-		// 	// Снимаем отметку с checkbox'а
-		// 	current_checkbox.prop("checked", true);
-		// 	// добавляем нужный класс иконке
-		// 	$(this).children(".checkbox__icon").removeClass("icon-check-box-unchecked");
-		// 	$(this).children(".checkbox__icon").addClass("icon-check-box");
-		// };
+		var current_checkbox = $(this).children(":checkbox");
+		if (current_checkbox.prop("checked")) {
+			// Снимаем отметку с checkbox'а
+			current_checkbox.prop("checked", false);
+			$(this).children(".checkbox__icon").removeClass("icon-accept");
+		} else {
+			// включаем чекбокс
+			current_checkbox.prop("checked", true);
+			// добавляем нужный класс иконке
+			$(this).children(".checkbox__icon").addClass("icon-accept");
+		};
 	});
 
 	// Рекламодатель: Поиск площадки
