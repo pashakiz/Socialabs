@@ -460,10 +460,9 @@ button.btn-icon {
 	line-height: 20px;
 	padding: 0 3px;
 }
-form input {
+form input[type=text] {
 	border: 1px solid #f3f3f3;
-	line-height: 30px;
-	padding: 0 12px;
+	padding: 9px 12px;
 	color: #6b6b6b;
 	font-size: 11px;
 	font-weight: 400;
@@ -564,6 +563,36 @@ form input {
 	color: #6b6b6b;
 	font-size: 13px;
 	font-weight: 400;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+.slider.slider-horizontal .slider-handle {
+	width: 12px;
+	height: 13px;
+	background: #7fabdf;
+	margin-top: -4px !important;
+	margin-left: -6px !important;
+}
+.slider.slider-horizontal .slider-track {
+	height: 5px;
+	margin-top: -3px;
+	background: #e9e9e9;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.slider .slider-selection {
+	background: #d0d0d0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 .container {
 	height: 100%;
@@ -781,8 +810,7 @@ form input {
 }
 .search-areas__rowblock-input_mini {
 	width: 45px;
-	padding: 0 5px;
-	line-height: 21px;
+	padding: 5px;
 	margin-right: 10px;
 }
 .search-areas__row-inner {
@@ -813,14 +841,6 @@ form input {
 	margin-left: 0;
 	vertical-align: middle;
 }
-.search-areas_default_show {}
-.search-areas_default_hide {}
-.search-areas_youtube_show {}
-.search-areas_youtube_hide {}
-.search-areas_vk_show {}
-.search-areas_vk_hide {}
-.search-areas_instagram_show {}
-.search-areas_instagram_hide {}
 .btn-advanced-settings {
 	background-color: transparent;
 	border: none;
@@ -838,6 +858,31 @@ form input {
 }
 .search-areas_hidden {
 	display: none;
+}
+.search-areas__rowblock-descr {
+	color: #7fabdf;
+}
+.search-areas__rowblock-descr-col1 {
+	float: left;
+	width: 15%;
+	text-align: left;
+}
+.search-areas__rowblock-descr-col2 {
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+.search-areas__rowblock-descr-col3 {
+	float: left;
+	width: 15%;
+	text-align: right;
+}
+.search-areas__rowblock-slider-icon {
+	font-size: 15px;
+}
+.search-areas__rowblock-slider-value {
+	font-size: 11px;
+	font-weight: 400;
 }
 .content__body {}
 .content__body__areaitem {

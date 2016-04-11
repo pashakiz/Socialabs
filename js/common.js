@@ -62,6 +62,22 @@ $(document).ready(function() {
 		}
 	});
 	
+	// slider (input range)
+	// https://github.com/seiyria/bootstrap-slider
+	$("input.slider").slider();
+	$("input.slider").on("slide", function(slideEvt) {
+		var val = slideEvt.value,
+			labels = $(this).attr('data-slider-labels'),
+			arr = labels.split(",", 2);
+		if (val < 51) {
+			val = 100 - val;
+			val += "% "+arr[0];
+		} else {
+			val += "% "+arr[1];
+		}
+		$(this).parent().find(".search-areas__rowblock-slider-value").text(val);
+	});
+
 	// Рекламодатель: Поиск площадки
 	// Расширенные настройки поиска площадок
 	$(".btn-advanced-settings").on("click", function() {

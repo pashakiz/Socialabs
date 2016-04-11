@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/icomoon.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/simplebar.css" />
+	<link rel="stylesheet" href="css/bootstrap-slider.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -314,11 +315,33 @@
 								</div> <!-- .search-areas__rowblock -->
 								<div class="search-areas__rowblock search-areas_all search-areas_instagram search-areas_vk">
 									<div class="search-areas__rowblock-title">Пол</div>
-									seekbar
+									<input class="slider" type="text" name="sex" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-handle="square" data-slider-tooltip="hide" data-slider-labels="мужчин,женщин">
+									<div class="search-areas__rowblock-descr clearfix">
+										<div class="search-areas__rowblock-descr-col1">
+											<i class="search-areas__rowblock-slider-icon icon-man" data-toggle="tooltip" data-placement="bottom" title="Мужчины"></i>
+										</div>
+										<div class="search-areas__rowblock-descr-col2">
+											<span class="search-areas__rowblock-slider-value">50% мужчин</span>
+										</div>
+										<div class="search-areas__rowblock-descr-col3">
+											<i class="search-areas__rowblock-slider-icon icon-woman" data-toggle="tooltip" data-placement="bottom" title="Женщины"></i>
+										</div>
+									</div>
 								</div> <!-- .search-areas__rowblock -->
 								<div class="search-areas__rowblock search-areas_all search-areas_vk">
 									<div class="search-areas__rowblock-title">Устройства</div>
-									seekbar
+									<input class="slider" type="text" name="devices" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-handle="square" data-slider-tooltip="hide" data-slider-labels="ПК,мобильных">
+									<div class="search-areas__rowblock-descr clearfix">
+										<div class="search-areas__rowblock-descr-col1">
+											<i class="search-areas__rowblock-slider-icon icon-desktop" data-toggle="tooltip" data-placement="bottom" title="ПК"></i>
+										</div>
+										<div class="search-areas__rowblock-descr-col2">
+											<span class="search-areas__rowblock-slider-value">50% ПК</span>
+										</div>
+										<div class="search-areas__rowblock-descr-col3">
+											<i class="search-areas__rowblock-slider-icon icon-mobile" data-toggle="tooltip" data-placement="bottom" title="Мобильные&nbsp;устройства"></i>
+										</div>
+									</div>
 								</div> <!-- .search-areas__rowblock -->
 							</div> <!-- .search-areas__row -->
 							<div class="search-areas__row clearfix search-areas_all search-areas_default search-areas_instagram search-areas_vk">
@@ -1122,6 +1145,7 @@
 	<script src="js/simplebar.min.js"></script>
 	<script src="js/jquery.customSelect.min.js"></script>
 	<script src="js/bootstrap.tooltip.min.js"></script>
+	<script src="js/bootstrap-slider.min.js"></script>
 	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
