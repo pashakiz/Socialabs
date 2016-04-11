@@ -755,6 +755,12 @@ form input {
 	width: 217px;
 	box-sizing: border-box;
 }
+.search-areas__rowblock-input_mini {
+	width: 45px;
+	padding: 0 5px;
+	line-height: 21px;
+	margin-right: 10px;
+}
 .search-areas__row-inner {
 	margin-top: 14px;
 }
@@ -783,6 +789,14 @@ form input {
 	margin-left: 0;
 	vertical-align: middle;
 }
+.search-areas_default_show {}
+.search-areas_default_hide {}
+.search-areas_youtube_show {}
+.search-areas_youtube_hide {}
+.search-areas_vk_show {}
+.search-areas_vk_hide {}
+.search-areas_instagram_show {}
+.search-areas_instagram_hide {}
 .btn-advanced-settings {
 	background-color: transparent;
 	border: none;
@@ -798,7 +812,7 @@ form input {
 	color: #4995f2;
 	border-color: #4995f2;
 }
-.search-areas__row_hidden {
+.search-areas_hidden {
 	display: none;
 }
 .content__body {}

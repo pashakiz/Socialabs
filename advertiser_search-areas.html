@@ -96,7 +96,8 @@
 							<div class="search-areas__rowblock">
 								<div class="search-areas__rowblock-title">Социальная сеть</div>
 								<div class="search-areas__rowblock-select select-container">
-									<select name="areatype">
+									<select class="areatype" name="areatype" required>
+										<option value="noselect" disabled selected>Выбрать</option>
 										<option value="youtube">youtube.com</option>
 										<option value="vk">vk.com</option>
 										<option value="ok">ok.ru</option>
@@ -108,13 +109,36 @@
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
 							</div> <!-- .search-areas__rowblock -->
-							<div class="search-areas__rowblock">
+							<div class="search-areas__rowblock search-areas_default_show search-areas_youtube_hide">
 								<div class="search-areas__rowblock-title">Тип рекламы</div>
 								<div class="search-areas__rowblock-select select-container">
-									<select name="areatype">
-										<option value="youtube">Текст в описании к видео</option>
-										<option value="vk">Преролл</option>
-										<option value="ok">Брэндированный ролик</option>
+									<select name="advertisingtype">
+										<option value="noselect" disabled selected>Выбрать</option>
+										<option value="youtube-text">Пост</option>
+									</select>
+									<i class="icon icon-arrow-down-chevron"></i>
+								</div>
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock search-areas_youtube_show search-areas_default_hide">
+								<div class="search-areas__rowblock-title">Тип рекламы</div>
+								<div class="search-areas__rowblock-select select-container">
+									<select name="advertisingtype">
+										<option value="noselect" disabled selected>Выбрать</option>
+										<option value="youtube-text">Текст в описании к видео</option>
+										<option value="youtube-preroll">Преролл</option>
+										<option value="youtube-brand">Брэндированный ролик</option>
+									</select>
+									<i class="icon icon-arrow-down-chevron"></i>
+								</div>
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock search-areas_instagram">
+								<div class="search-areas__rowblock-title">Тип аккаунта</div>
+								<div class="search-areas__rowblock-select select-container">
+									<select name="accounttype">
+										<option value="noselect" disabled selected>Выбрать</option>
+										<option value="instagram-public">Паблик</option>
+										<option value="instagram-blogger">Блоггер</option>
+										<option value="instagram-celebrity">Селебрити</option>
 									</select>
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
@@ -122,12 +146,13 @@
 							<div class="search-areas__rowblock">
 								<div class="search-areas__rowblock-title">Рекламная запись</div>
 								<div class="search-areas__rowblock-select select-container">
-									<select name="areatype">
-										<option value="youtube">Жили были</option>
-										<option value="vk">Самые лучшие рецепты</option>
-										<option value="ok">Было не было</option>
-										<option value="ok">Анекдоты за 50</option>
-										<option value="ok">Очень длинное название рекламмной записи, которое может придумать какой-то мудак</option>
+									<select name="advertisingnode">
+										<option value="noselect" disabled selected>Выбрать</option>
+										<option value="val1">Жили были</option>
+										<option value="val2">Самые лучшие рецепты</option>
+										<option value="val3">Было не было</option>
+										<option value="val4">Анекдоты за 50</option>
+										<option value="val5">Очень длинное название рекламмной записи, которое может придумать какой-то макдак))</option>
 									</select>
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
@@ -259,11 +284,48 @@
 							</div>
 						</div> <!-- .search-areas__row -->
 						<div class="search-areas__row clearfix">
-							row
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Цена</div>
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="price-from" placeholder="От">
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="price-to" placeholder="До">
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock-title">Участников</div>
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="subscribers-from" placeholder="От">
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="subscribers-to" placeholder="До">
+							</div> <!-- .search-areas__rowblock -->
+							<div class="search-areas__rowblock search-areas_youtube_hide search-areas_default_show">
+								<div class="search-areas__rowblock-title">Охват</div>
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="coverage-from" placeholder="От">
+								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="coverage-to" placeholder="До">
+							</div> <!-- .search-areas__rowblock -->
 						</div> <!-- .search-areas__row -->
-						<div class="search-areas__row search-areas__row_hidden clearfix">
-							row-hidden
-						</div> <!-- .search-areas__row -->
+						<div class="search-areas_hidden">
+							<div class="search-areas__row clearfix search-areas_youtube_hide search-areas_default_show">
+								<div class="search-areas__rowblock">
+									<div class="search-areas__rowblock-title">Лайки</div>
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="likes-from" placeholder="От">
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="likes-to" placeholder="До">
+								</div> <!-- .search-areas__rowblock -->
+								<div class="search-areas__rowblock">
+									<div class="search-areas__rowblock-title">Комментарии</div>
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="comments-from" placeholder="От">
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="comments-to" placeholder="До">
+								</div> <!-- .search-areas__rowblock -->
+							</div> <!-- .search-areas__row -->
+							<div class="search-areas__row clearfix search-areas_youtube_hide search-areas_default_show">
+								<div class="search-areas__rowblock">
+									чекбоксы
+								</div> <!-- .search-areas__rowblock -->
+							</div> <!-- .search-areas__row -->
+							<div class="search-areas__row clearfix search-areas_youtube_show search-areas_default_hide">
+								<div class="search-areas__rowblock">
+									<div class="search-areas__rowblock-title">Видео в день</div>
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="videoperday-from" placeholder="От">
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="videoperday-to" placeholder="До">
+								</div> <!-- .search-areas__rowblock -->
+							</div> <!-- .search-areas__row -->
+						</div> <!-- .search-areas_hidden -->
 						<div class="search-areas__row clearfix">
 							<button class="btn-inner" type="submit">Подобрать площадки</button>
 							<button class="btn-advanced-settings" type="button">Расширенные настройки</button>

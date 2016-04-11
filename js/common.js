@@ -8,11 +8,6 @@ $(document).ready(function() {
 	$(".chain-messages-dialog__messages").simplebar();
 	// $(".chain-messages-dialog__textarea").simplebar();
 
-	// Расширенные настройки поиска площадок
-	$(".btn-advanced-settings").on("click", function() {
-		$(".search-areas__row_hidden").slideToggle();
-	});
-
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
@@ -37,6 +32,35 @@ $(document).ready(function() {
 		}
 	});
 
+	// Рекламодатель: Поиск площадки
+	// выбор типа соц.сети
+	$('select.areatype').on('change', function() {
+		var type = $(this).val();
+		if (type == 'youtube') {
+			$('.search-areas_youtube_show').show();
+			$('.search-areas_youtube_hide').hide();
+		}
+		if (type == 'vk') {
+			$('.search-areas_vk_show').show();
+			$('.search-areas_vk_hide').hide();
+		}
+		if (type == 'instagram') {
+			$('.search-areas_instagram_show').show();
+			$('.search-areas_instagram_hide').hide();
+		}
+		if (type == 'ok' || type == 'googleplus' || type == 'twitter' || type == 'facebook' ) {
+			$('.search-areas_default_show').show();
+			$('.search-areas_default_hide').hide();
+		}
+	});
+	
+	// Рекламодатель: Поиск площадки
+	// Расширенные настройки поиска площадок
+	$(".btn-advanced-settings").on("click", function() {
+		var type = $('select.areatype').val();
+		$(".search-areas_hidden").slideToggle();
+	});
+
 	// Custom CheckBoxes (default)
 	$(".checkbox_default").on("click", function() {
 		// var current_checkbox = $(this).children(":checkbox");
@@ -55,6 +79,7 @@ $(document).ready(function() {
 		// };
 	});
 
+	// Рекламодатель: Поиск площадки
 	// Select areatopics: Custom CheckBoxes (multiselect)
 	$(".checkbox_multiselect").on("click", function() {
 		var current_checkbox = $(this).children(":checkbox");
@@ -99,7 +124,12 @@ $(document).ready(function() {
 	// http://adam.co/lab/jquery/customselect/
 	// https://github.com/adamcoulombe/jquery.customSelect
 	$("select").customSelect();
+	// Рекламодатель: Поиск площадки (скрываем некоторые select-элементы ПОСЛЕ (!) их инициализации)
+	$('.search-areas_youtube_show').hide();
+	$('.search-areas_vk').hide();
+	$('.search-areas_instagram').hide();
 
+	// MESSAGES (begin) -------------------------------------------------------------------
 	// show messages
 	$(".sidebarleft__header__controls__item .icon-message").on("click", function() {
 		$(".sidebarleft__header__controls__item").removeClass("active");
@@ -138,6 +168,7 @@ $(document).ready(function() {
 		console.log("ajax-delete-chain-messages-id");
 		$(this).parent().slideUp();
 	});
+	// MESSAGES (end) -------------------------------------------------------------------
 
 	// Bootstrap: tooltip.js v3.3.6 http://getbootstrap.com/javascript/#tooltip
 	$('[data-toggle="tooltip"]').tooltip();
@@ -154,6 +185,8 @@ $(document).ready(function() {
 		padding: 0
 	});
 
+
+	// INDEX PAGE (begin) ------------------------------------------------
 	//Плавный скролл до блока on index page
 	//Документация: https://github.com/flesler/jquery.scrollTo
 	$("a.howitworkslnk").on("click", function() {
@@ -310,5 +343,6 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	// INDEX PAGE (end) ------------------------------------------------
 
 });
