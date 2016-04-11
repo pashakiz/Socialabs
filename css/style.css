@@ -437,6 +437,7 @@ button.btn-icon {
 }
 .select-container select {
 	z-index: 100;
+	cursor: pointer;
 }
 .select-container .icon {
 	display: inline-block;
@@ -453,6 +454,7 @@ button.btn-icon {
 	border: 1px solid #f3f3f3;
 	color: #6b6b6b;
 	font-size: 11px;
+	cursor: pointer;
 }
 .customSelectInner {
 	line-height: 20px;

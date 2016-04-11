@@ -8,6 +8,11 @@ $(document).ready(function() {
 	$(".chain-messages-dialog__messages").simplebar();
 	// $(".chain-messages-dialog__textarea").simplebar();
 
+	// customSelect
+	// http://adam.co/lab/jquery/customselect/
+	// https://github.com/adamcoulombe/jquery.customSelect
+	$("select").customSelect();
+
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
@@ -34,30 +39,33 @@ $(document).ready(function() {
 
 	// Рекламодатель: Поиск площадки
 	// выбор типа соц.сети
+	// $('.search-areas_youtube').hide();
+	$('.search-areas_all').hide();
+	$('.search-areas_default').show();
 	$('select.areatype').on('change', function() {
 		var type = $(this).val();
 		if (type == 'youtube') {
-			$('.search-areas_youtube_show').show();
-			$('.search-areas_youtube_hide').hide();
+			$('.search-areas_all').hide();
+			$('.search-areas_youtube').show();
 		}
 		if (type == 'vk') {
-			$('.search-areas_vk_show').show();
-			$('.search-areas_vk_hide').hide();
+			$('.search-areas_all').hide();
+			$('.search-areas_vk').show();
 		}
 		if (type == 'instagram') {
-			$('.search-areas_instagram_show').show();
-			$('.search-areas_instagram_hide').hide();
+			$('.search-areas_all').hide();
+			$('.search-areas_instagram').show();
 		}
 		if (type == 'ok' || type == 'googleplus' || type == 'twitter' || type == 'facebook' ) {
-			$('.search-areas_default_show').show();
-			$('.search-areas_default_hide').hide();
+			$('.search-areas_all').hide();
+			$('.search-areas_default').show();
 		}
 	});
 	
 	// Рекламодатель: Поиск площадки
 	// Расширенные настройки поиска площадок
 	$(".btn-advanced-settings").on("click", function() {
-		var type = $('select.areatype').val();
+		// var type = $('select.areatype').val();
 		$(".search-areas_hidden").slideToggle();
 	});
 
@@ -119,15 +127,6 @@ $(document).ready(function() {
 		$("input[value='"+chekbox_value+"']").parent().children(".checkbox__icon").removeClass("icon-accept");
 		$(this).remove();
 	});
-	
-	// customSelect
-	// http://adam.co/lab/jquery/customselect/
-	// https://github.com/adamcoulombe/jquery.customSelect
-	$("select").customSelect();
-	// Рекламодатель: Поиск площадки (скрываем некоторые select-элементы ПОСЛЕ (!) их инициализации)
-	$('.search-areas_youtube_show').hide();
-	$('.search-areas_vk').hide();
-	$('.search-areas_instagram').hide();
 
 	// MESSAGES (begin) -------------------------------------------------------------------
 	// show messages

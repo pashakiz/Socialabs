@@ -109,7 +109,7 @@
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
 							</div> <!-- .search-areas__rowblock -->
-							<div class="search-areas__rowblock search-areas_default_show search-areas_youtube_hide">
+							<div class="search-areas__rowblock search-areas_all search-areas_default search-areas_instagram search-areas_vk">
 								<div class="search-areas__rowblock-title">Тип рекламы</div>
 								<div class="search-areas__rowblock-select select-container">
 									<select name="advertisingtype">
@@ -119,7 +119,7 @@
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
 							</div> <!-- .search-areas__rowblock -->
-							<div class="search-areas__rowblock search-areas_youtube_show search-areas_default_hide">
+							<div class="search-areas__rowblock search-areas_all search-areas_youtube">
 								<div class="search-areas__rowblock-title">Тип рекламы</div>
 								<div class="search-areas__rowblock-select select-container">
 									<select name="advertisingtype">
@@ -131,7 +131,7 @@
 									<i class="icon icon-arrow-down-chevron"></i>
 								</div>
 							</div> <!-- .search-areas__rowblock -->
-							<div class="search-areas__rowblock search-areas_instagram">
+							<div class="search-areas__rowblock search-areas_all search-areas_instagram">
 								<div class="search-areas__rowblock-title">Тип аккаунта</div>
 								<div class="search-areas__rowblock-select select-container">
 									<select name="accounttype">
@@ -294,35 +294,56 @@
 								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="subscribers-from" placeholder="От">
 								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="subscribers-to" placeholder="До">
 							</div> <!-- .search-areas__rowblock -->
-							<div class="search-areas__rowblock search-areas_youtube_hide search-areas_default_show">
+							<div class="search-areas__rowblock search-areas_all search-areas_default search-areas_instagram search-areas_vk">
 								<div class="search-areas__rowblock-title">Охват</div>
 								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="coverage-from" placeholder="От">
 								<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="coverage-to" placeholder="До">
 							</div> <!-- .search-areas__rowblock -->
 						</div> <!-- .search-areas__row -->
 						<div class="search-areas_hidden">
-							<div class="search-areas__row clearfix search-areas_youtube_hide search-areas_default_show">
-								<div class="search-areas__rowblock">
+							<div class="search-areas__row clearfix search-areas_all search-areas_default search-areas_instagram search-areas_vk">
+								<div class="search-areas__rowblock search-areas_all search-areas_default search-areas_instagram">
 									<div class="search-areas__rowblock-title">Лайки</div>
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="likes-from" placeholder="От">
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="likes-to" placeholder="До">
 								</div> <!-- .search-areas__rowblock -->
-								<div class="search-areas__rowblock">
+								<div class="search-areas__rowblock search-areas_all search-areas_default search-areas_instagram">
 									<div class="search-areas__rowblock-title">Комментарии</div>
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="comments-from" placeholder="От">
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="comments-to" placeholder="До">
 								</div> <!-- .search-areas__rowblock -->
-							</div> <!-- .search-areas__row -->
-							<div class="search-areas__row clearfix search-areas_youtube_hide search-areas_default_show">
-								<div class="search-areas__rowblock">
-									чекбоксы
+								<div class="search-areas__rowblock search-areas_all search-areas_instagram search-areas_vk">
+									<div class="search-areas__rowblock-title">Пол</div>
+									seekbar
+								</div> <!-- .search-areas__rowblock -->
+								<div class="search-areas__rowblock search-areas_all search-areas_vk">
+									<div class="search-areas__rowblock-title">Устройства</div>
+									seekbar
 								</div> <!-- .search-areas__rowblock -->
 							</div> <!-- .search-areas__row -->
-							<div class="search-areas__row clearfix search-areas_youtube_show search-areas_default_hide">
-								<div class="search-areas__rowblock">
+							<div class="search-areas__row clearfix search-areas_all search-areas_default search-areas_instagram search-areas_vk">
+								<div class="search-areas__rowblock search-areas_all search-areas_default search-areas_instagram">
+									чекбоксы
+								</div> <!-- .search-areas__rowblock -->
+								<div class="search-areas__rowblock search-areas_all search-areas_vk">
+									<div class="search-areas__rowblock-title">Страна</div>
+									<input class="search-areas__rowblock-input" type="text" name="country" placeholder="Страна">
+								</div> <!-- .search-areas__rowblock -->
+								<div class="search-areas__rowblock search-areas_all search-areas_vk">
+									<div class="search-areas__rowblock-title">Город</div>
+									<input class="search-areas__rowblock-input" type="text" name="city" placeholder="Город">
+								</div> <!-- .search-areas__rowblock -->
+							</div> <!-- .search-areas__row -->
+							<div class="search-areas__row clearfix search-areas_all search-areas_youtube search-areas_vk">
+								<div class="search-areas__rowblock search-areas_all search-areas_youtube">
 									<div class="search-areas__rowblock-title">Видео в день</div>
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="videoperday-from" placeholder="От">
 									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="videoperday-to" placeholder="До">
+								</div> <!-- .search-areas__rowblock -->
+								<div class="search-areas__rowblock search-areas_all search-areas_vk">
+									<div class="search-areas__rowblock-title">Записей в день</div>
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="postsperday-from" placeholder="От">
+									<input class="search-areas__rowblock-input search-areas__rowblock-input_mini" type="text" name="postsperday-to" placeholder="До">
 								</div> <!-- .search-areas__rowblock -->
 							</div> <!-- .search-areas__row -->
 						</div> <!-- .search-areas_hidden -->
