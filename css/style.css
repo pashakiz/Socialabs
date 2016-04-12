@@ -1231,6 +1231,19 @@ form.area-add-type input {
 	font-weight: 400;
 	margin-top: 18px;
 }
+.taskview {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+}
+.taskview__row {
+	padding: 17px 25px 14px;
+	border-bottom: 1px solid #efefef;
+}
+.taskview__row_header {
+	color: #2c68ae;
+	font-size: 17px;
+	font-weight: 400;
+}
 .pagination {
 	margin: 16px 0 0 16px;
 }
