@@ -96,6 +96,12 @@
 							<div class="campaign-add__h1">Введите название кампании:</div>
 							<input type="text" name="campaign-name" placeholder="Название">
 							<button class="btn-inner" type="submit">Создать кампанию</button>
+							<a class="btn btn-inner btn-delete-campaign fancybox" href="#delete">Удалить кампанию</a>
+							<div id="delete" class="popup">
+								<div class="form-title">Удаление кампании</div>
+								<p>Вы собираетесь удалить кампанию "Лучшие рецепты"?</p>
+								<button class="btn-inner btn-popup-delete-campaign">Да</button><button class="btn-popup-cancel btn-inner">Отмена</button>
+							</div>
 						</form>
 					</div> <!-- .campaign-add -->
 				</div> <!-- .content__body -->
@@ -371,7 +377,7 @@
 				</div>
 			</div>
 		</div> <!-- .sidebarright -->
-	</div>
+	</div> <!-- .container -->
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
 	<script src="js/html5shiv/html5shiv.min.js"></script>

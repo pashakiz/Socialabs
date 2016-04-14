@@ -396,6 +396,7 @@ footer .social a:last-child {
 }
 /* -------------------------------------- not main page (begin) -------------------------------------- */
 .btn-inner {
+	width: auto;
 	background-color: #90c2ff;
 	color: #fff;
 	padding: 0 19px;
@@ -457,7 +458,7 @@ button.btn-icon {
 	line-height: 20px;
 	padding: 0 3px;
 }
-form input[type=text] {
+input[type=text] {
 	border: 1px solid #f3f3f3;
 	padding: 9px 12px;
 	color: #6b6b6b;
@@ -1311,6 +1312,27 @@ form.area-add-type input {
 	color: #7fabdf;
 	vertical-align: middle;
 	margin-right: 8px;
+}
+.campaign-add {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	padding: 16px 22px 24px;
+	font-weight: 400;
+}
+.campaign-add__h1 {
+	font-size: 17px;
+	color: #2c68ae;
+	margin-bottom: 14px;
+}
+.campaign-add input {
+	display: block;
+	font-size: 12px;
+	width: 494px;
+	box-sizing: border-box;
+	margin-bottom: 14px;
+}
+.btn-delete-campaign {
+	margin-left: 8px;
 }
 .pagination {
 	margin: 16px 0 0 16px;
