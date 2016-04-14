@@ -1334,6 +1334,128 @@ form.area-add-type input {
 .btn-delete-campaign {
 	margin-left: 8px;
 }
+.campaign {
+	margin-top: 11px;
+	border-bottom: 1px solid #d3dbed;
+}
+.campaign:first-child {
+	margin-top: 0;
+}
+.campaign__title {
+	font-weight: 400;
+	background-color: #fff;
+	padding: 14px 0 12px 22px;
+	margin-bottom: 1px;
+}
+.campaign__name {
+	float: left;
+	font-size: 19px;
+	color: #315bb7;
+}
+.campaign__btns {
+	float: right;
+}
+.campaign__btn {
+	float: left;
+	font-size: 13px;
+	color: #7a7a7a;
+	text-decoration: none;
+}
+.campaign__btn:hover {
+	color: #a8a8a8;
+}
+.campaign__btn_addnote {
+	border-right: 1px solid #f0f0f0;
+	padding: 3px 10px 2px;
+}
+.campaign__btn_edit {
+	padding: 3px 10px 2px;
+}
+.campaign__notes {
+	font-weight: 400;
+}
+.campaign-note {
+	margin-top: 5px;
+	background-color: #fff;
+}
+.campaign-note:first-child {
+	margin-top: 0;
+}
+.campaign-note__header {
+	padding: 12px 0 11px 24px;
+	border-bottom: 1px solid #efefef;
+}
+.campaign-note__title {
+	float: left;
+}
+.campaign-note__icon {
+	font-size: 16px;
+	color: #7fabdf;
+}
+.campaign-note__name {
+	margin: 0 12px;
+	color: #727272;
+	font-size: 14px;
+}
+.campaign-note__status {
+	color: #90c2ff;
+	font-size: 11px;
+}
+.campaign-note__btns {
+	float: right;
+}
+.campaign-note__btn {
+	float: left;
+	color: #7fabdf;
+	font-size: 14px;
+	padding: 3px 10px 2px;
+	text-decoration: none;
+	border-left: 1px solid #f0f0f0;
+}
+.campaign-note__btn:first-child {
+	border-left: none;
+}
+.campaign-note__body {
+	padding: 21px 10px 19px 22px;
+}
+.campaign-note__requests {
+	float: left;
+	padding: 6px 0 8px;
+}
+.campaign-note__requests-item {
+	float: left;
+	margin-right: 15px;
+}
+.campaign-note__requests-icon {
+	float: left;
+	font-size: 14px;
+	color: #7fabdf;
+	margin-right: 6px;
+}
+.campaign-note__requests-value {
+	float: left;
+	background-color: #90c2ff;
+	color: #fff;
+	font-size: 11px;
+	padding: 3px 5px 2px;
+}
+.campaign-note__finance {
+	float: right;
+}
+.campaign-note__finance-item {
+	float: left;
+	font-size: 11px;
+	margin-right: 37px;
+	text-align: right;
+	color: #7fabdf;
+}
+.campaign-note__finance-item:last-child {
+	margin-right: 0;
+}
+.campaign-note__finance-title {}
+.campaign-note__finance-value {
+	margin-top: 10px;
+}
 .pagination {
 	margin: 16px 0 0 16px;
 }
