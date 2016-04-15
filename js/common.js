@@ -21,6 +21,19 @@ $(document).ready(function() {
 		$.fancybox.close();
 	});
 
+	// agent/my-areas/add
+	// remove uploaded photo
+	$(".btn-addphoto-remove").on("click", function() {
+		console.log("delete-uploaded-photo-from-server");
+		$(this).parent().remove();
+	});
+	$(".btn-add-voting-answer").on("click", function() {
+		//добавить вариант
+	});
+	$(".btn-remove-voting-answer").on("click", function() {
+		//удалить вариант (НО оставить скажем ТРИ инпута неудаляемыми)
+	});
+
 	//Custom RadioButtons
 	$(".radiobutton").on("click", function() {
 		// обнуляем все радиобатоны и кастомные иконки
@@ -29,12 +42,14 @@ $(document).ready(function() {
 		// устанавливаем текущий RB в checked
 		$(this).children(":radio").prop("checked", true);
 		$(this).children(".icon-radiobutton").addClass("checked");
-		//show additional input for Google+
-		if ( $(this).hasClass("add-input") ) {
-			$(".area-add__added-input").slideDown();
-		} else {
-			$(".area-add__added-input").slideUp();
-		}
+	});
+
+	// show additional input for Google+ (page: agent/my-areas/add)
+	$(".area-add__show-input").on("click", function() {
+		$(".area-add__added-input").slideDown();
+	});
+	$(".area-add__hide-input").on("click", function() {
+		$(".area-add__added-input").slideUp();
 	});
 
 	// Рекламодатель: Поиск площадки

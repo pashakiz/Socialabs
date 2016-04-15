@@ -425,6 +425,19 @@ button.btn-icon {
 	padding: 0;
 	margin-left: 1px;
 }
+.btn-icon2 {
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	color: #7fabdf;
+	padding: 0;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-icon2:hover {
+	color: #4995f2;
+}
 .btn-inner:hover,
 .btn-icon:hover {
 	background-color: #add2ff;
@@ -459,6 +472,14 @@ button.btn-icon {
 	padding: 0 3px;
 }
 input[type=text] {
+	border: 1px solid #f3f3f3;
+	padding: 9px 12px;
+	color: #6b6b6b;
+	font-size: 11px;
+	font-weight: 400;
+	outline: none;
+}
+textarea {
 	border: 1px solid #f3f3f3;
 	padding: 9px 12px;
 	color: #6b6b6b;
@@ -1100,12 +1121,12 @@ input[type=range]:focus {
 	float: left;
 	padding-top: 24px;
 }
-.area-add__help {
+.help {
 	float: right;
 	margin: 18px 86px 14px 0;
 	border: 1px solid #e6e6e6;
 }
-.area-add__help-row {
+.help__row {
 	border-bottom: 1px solid #e6e6e6;
 	color: #2c68ae;
 	font-size: 15px;
@@ -1113,17 +1134,17 @@ input[type=range]:focus {
 	font-weight: 400;
 	padding: 0 12px;
 }
-.area-add__help-row:last-child {
+.help__row:last-child {
 	border-bottom: none;
 }
-.area-add__help-row a {
+.help__row a {
 	font-size: 12px;
 	line-height: 31px;
 	font-weight: 400;
 	color: #6b6b6b;
 	text-decoration: none;
 }
-.area-add__help-row a:hover {
+.help__row a:hover {
 	text-decoration: underline;
 }
 form.area-add-type {
@@ -1145,6 +1166,164 @@ form.area-add-type input {
 	outline: none;
 }
 .area-add__btn {
+	display: block;
+	margin-top: 8px;
+}
+.addnote {
+	background-color: #fff;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #d3dbed;
+}
+.addnote__header {
+	color: #2c68ae;
+	font-size: 17px;
+	line-height: 44px;
+	font-weight: 400;
+	padding: 0 22px;
+	border-bottom: 1px solid #efefef;
+}
+.addnote__body {
+	padding: 0 22px;
+}
+.addnote__type {
+	float: left;
+	padding-top: 17px;
+}
+form.addnote-type {
+	width: 630px;
+}
+.addnote__row {
+	width: 555px;
+	margin-bottom: 19px;
+}
+.addnote__row .select-container {
+	float: left;
+}
+.addnote__row .select-container .icon {
+	right: 13px;
+}
+.addnote__row .select-container .customSelect {
+	padding: 10px 12px 9px;
+	font-size: 12px;
+}
+.addnote__row .select-container.wide {
+	margin-right: 21px;
+}
+.addnote__row .select-container.wide .customSelectInner {
+	max-width: 350px;
+	padding: 0 10px 0 0;
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.addnote__row .select-container.mini .customSelectInner {
+	max-width: 70px;
+	padding: 0 10px 0 0;
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+form.addnote-type input,
+form.addnote-type textarea {
+	font-size: 12px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.addnote__textarea-container {
+	position: relative;
+}
+.addnote__controls {
+	position: absolute;
+	right: 0;
+	bottom: -27px;
+	font-size: 1px;
+}
+.addnote__control-btn {
+	font-size: 15px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.addnote__control-btn:last-child {
+	margin-right: 0;
+}
+.addnote__control-btn .icon-photo {
+	font-size: 20px;
+}
+.addnote__control-btn .icon-movie {
+	font-size: 23px;
+}
+#trackingurl input {
+	width: 100%;
+	margin-bottom: 13px;
+}
+#trackingurl .btn-popup-cancel {
+	margin: 5px 0 0 0;
+}
+.addnote__smiles {
+	display: none;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+}
+form.addnote-type textarea {
+	min-height: 104px;
+	resize: vertical;
+}
+.addphoto {
+	width: 80px;
+	height: 63px;
+	position: relative;
+}
+.addphoto img {
+	width: 100%;
+	height: auto;
+}
+.btn-addphoto-remove {
+	font-size: 10px;
+	color: #d9d9d9;
+	position: absolute;
+	right: -19px;
+}
+.addvideo {
+	padding-top: 19px;
+}
+.addvoting {
+	position: relative;
+}
+.addvoting input {
+	margin-bottom: 9px;
+}
+.addvoting input:first-child {
+	margin-bottom: 16px;
+}
+.addvoting input:last-child {
+	margin-bottom: 0;
+}
+.btn-add-voting-answer {
+	display: inline-block;
+	color: #68acff;
+	font-size: 11px;
+	border-bottom: 1px dashed #68acff;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	bottom: -19px;
+}
+.btn-add-voting-answer:hover {
+	border-color: transparent;
+}
+.btn-remove-voting-answer {
+	font-size: 10px;
+	color: #d9d9d9;
+	cursor: pointer;
+	position: absolute;
+	right: -21px;
+	bottom: 10px;
+}
+.addnote__btn {
 	display: block;
 	margin-top: 8px;
 }
@@ -2143,6 +2322,7 @@ form.area-add-type input {
 .popup p {
 	color: #5b5a5a;
 	font-size: 13px;
+	line-height: 17px;
 	font-weight: 400;
 	margin: 0 0 10px 0;
 }
