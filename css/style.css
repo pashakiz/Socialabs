@@ -1418,42 +1418,42 @@ form.area-add-type input {
 .campaign-note__body {
 	padding: 21px 10px 19px 22px;
 }
-.campaign-note__requests {
+.campaign-note__left {
 	float: left;
 	padding: 6px 0 8px;
 }
-.campaign-note__requests-item {
+.campaign-note__left-item {
 	float: left;
 	margin-right: 15px;
 }
-.campaign-note__requests-icon {
+.campaign-note__left-icon {
 	float: left;
 	font-size: 14px;
 	color: #7fabdf;
 	margin-right: 6px;
 }
-.campaign-note__requests-value {
+.campaign-note__left-value {
 	float: left;
 	background-color: #90c2ff;
 	color: #fff;
 	font-size: 11px;
 	padding: 3px 5px 2px;
 }
-.campaign-note__finance {
+.campaign-note__right {
 	float: right;
 }
-.campaign-note__finance-item {
+.campaign-note__right-item {
 	float: left;
 	font-size: 11px;
 	margin-right: 37px;
 	text-align: right;
 	color: #7fabdf;
 }
-.campaign-note__finance-item:last-child {
+.campaign-note__right-item:last-child {
 	margin-right: 0;
 }
-.campaign-note__finance-title {}
-.campaign-note__finance-value {
+.campaign-note__right-title {}
+.campaign-note__right-value {
 	margin-top: 10px;
 }
 .pagination {
