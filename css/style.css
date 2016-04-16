@@ -471,7 +471,8 @@ button.btn-icon {
 	line-height: 20px;
 	padding: 0 3px;
 }
-input[type=text] {
+input[type=text],
+input[type=password] {
 	border: 1px solid #f3f3f3;
 	padding: 9px 12px;
 	color: #6b6b6b;
@@ -1210,7 +1211,9 @@ form.addnote-type {
 	margin-right: 21px;
 }
 .addnote__row .select-container.wide .customSelectInner {
-	max-width: 350px;
+	width: 392px;
+	min-width: 392px;
+	max-width: 392px;
 	padding: 0 10px 0 0;
 	line-height: 1;
 	white-space: nowrap;
@@ -1218,6 +1221,8 @@ form.addnote-type {
 	text-overflow: ellipsis;
 }
 .addnote__row .select-container.mini .customSelectInner {
+	width: 70px;
+	min-width: 70px;
 	max-width: 70px;
 	padding: 0 10px 0 0;
 	line-height: 1;
@@ -1225,7 +1230,8 @@ form.addnote-type {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-form.addnote-type input,
+form.addnote-type input[type=text],
+form.addnote-type input[type=password],
 form.addnote-type textarea {
 	font-size: 12px;
 	display: block;
@@ -1242,18 +1248,32 @@ form.addnote-type textarea {
 	font-size: 1px;
 }
 .addnote__control-btn {
+	display: block;
+	float: left;
 	font-size: 15px;
 	vertical-align: middle;
-	margin-right: 10px;
+	margin-left: 15px;
+	height: 23px;
+	display: none;
 }
-.addnote__control-btn:last-child {
-	margin-right: 0;
+.addnote__control-btn_link {
+	display: block;
+	margin-left: 0;
+}
+.addnote__control-btn_photo {}
+.addnote__control-btn_smiles {}
+.addnote__control-btn_video {}
+.addnote__control-btn_voting {}
+.addnote__control-btn_link,
+.addnote__control-btn_smiles,
+.addnote__control-btn_voting {
+	padding-top: 3px;
 }
 .addnote__control-btn .icon-photo {
 	font-size: 20px;
 }
 .addnote__control-btn .icon-movie {
-	font-size: 23px;
+	font-size: 22px;
 }
 #trackingurl input {
 	width: 100%;
@@ -1262,7 +1282,7 @@ form.addnote-type textarea {
 #trackingurl .btn-popup-cancel {
 	margin: 5px 0 0 0;
 }
-.addnote__smiles {
+.smiles {
 	display: none;
 	position: absolute;
 	right: 0;
@@ -1277,9 +1297,32 @@ form.addnote-type textarea {
 	height: 63px;
 	position: relative;
 }
+.addphoto__img-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
 .addphoto img {
 	width: 100%;
 	height: auto;
+}
+.inputfile-container {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer !important;
+}
+input.inputfile {
+	cursor: pointer !important;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 50px;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
 }
 .btn-addphoto-remove {
 	font-size: 10px;
@@ -1290,7 +1333,25 @@ form.addnote-type textarea {
 .addvideo {
 	padding-top: 19px;
 }
+.addvideo__video-container {
+	display: none;
+	width: 280px;
+}
+.addvideo__video-responsive {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 60px;
+}
+.addvideo__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .addvoting {
+	padding-top: 19px;
 	position: relative;
 }
 .addvoting input {

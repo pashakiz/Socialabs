@@ -22,16 +22,146 @@ $(document).ready(function() {
 	});
 
 	// agent/my-areas/add
+	// выбор соц.сети
+	$('.addnote__row_youtube').hide();
+	$('.radiobutton__notesocial').on('click', function() {
+		var type = $(this).children(":radio").val();
+		if (type == 'youtube') {
+			console.log('youtube');
+			$(".addnote__control-btn").hide();
+			$(".addnote__control-btn_link").show();
+			$('.addnote__row_youtube').show();
+			$('.addnote__row_all').hide();
+			if ( $('select.addnote__row_notetype').val() == 'youtube-text' ) {
+				console.log($('select.addnote__row_notetype').val());
+				$('.addnote__row_all').show();
+			}
+		}
+		if (type == 'vk') {
+			console.log('vk');
+			$('.addnote__row_youtube').hide();
+			$('.addnote__row_all').show();
+			$(".addnote__control-btn").hide();
+			$(".addnote__control-btn_link").show();
+			$(".addnote__control-btn_photo").show();
+			$(".addnote__control-btn_smiles").show();
+			$(".addnote__control-btn_video").show();
+			$(".addnote__control-btn_voting").show();
+		}
+		if (type == 'instagram') {
+			console.log('instagram');
+			$('.addnote__row_youtube').hide();
+			$('.addnote__row_all').show();
+			$(".addnote__control-btn").hide();
+			$(".addnote__control-btn_photo").show();
+			$(".addnote__control-btn_smiles").show();
+		}
+		if (type == 'twitter') {
+			console.log('twitter');
+			$('.addnote__row_youtube').hide();
+			$('.addnote__row_all').show();
+			$(".addnote__control-btn").hide();
+			$(".addnote__control-btn_link").show();
+			$(".addnote__control-btn_photo").show();
+		}
+		if (type == 'ok' || type == 'googleplus' || type == 'facebook' ) {
+			$('.addnote__row_youtube').hide();
+			$('.addnote__row_all').show();
+			$(".addnote__control-btn").hide();
+			$(".addnote__control-btn_link").show();
+			$(".addnote__control-btn_photo").show();
+			$(".addnote__control-btn_video").show();
+		}
+	});
+	// выбор типа рекламы для youtube
+	$('select.addnote__row_notetype').on('change', function() {
+		var type = $(this).val();
+		if (type == 'youtube-text') {
+			$('.addnote__row_all').show();
+		}
+		if (type == 'youtube-preroll') {
+			$('.addnote__row_all').hide();
+		}
+		if (type == 'youtube-brand') {
+			$('.addnote__row_all').hide();
+		}
+	});
+
+	// agent/my-areas/add
+	// upload photo
+	function uploadPhoto(input) {
+	if (input.files && input.files[0]) {
+			var reader = new FileReader();
+
+			reader.onload = function(e) {
+				$('img.addphoto__img').attr('src', e.target.result);
+			}
+
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	$("#uploadphoto").change(function(){
+		uploadPhoto(this);
+		$(".addnote__row_photo").slideDown();
+	});
+	// agent/my-areas/add
 	// remove uploaded photo
 	$(".btn-addphoto-remove").on("click", function() {
-		console.log("delete-uploaded-photo-from-server");
-		$(this).parent().remove();
+		function uploadPhotoClearHtml() {	
+			$("#uploadphoto").val("");
+			$('img.addphoto__img').attr('src', "");
+		}
+		$(this).parent().parent().slideUp();
+		setTimeout(uploadPhotoClearHtml, 1000);
 	});
+
+	// agent/my-areas/add
+	// show video input
+	$(".addnote__control-btn_video").on("click", function() {
+		$(".addnote__row_video").slideToggle();
+	});
+	// agent/my-areas/add
+	// add video
+	$("input.addvideourl").on("blur", function() {
+		var url = $(this).val(),
+			youtube_arr = url.split("youtube.com/watch?v="),
+			youtube_id = "";
+		if (youtube_arr[0] == url) {
+			youtube_arr = url.split("youtu.be/");
+		}
+
+		youtube_id = youtube_arr[1];
+		
+		if (youtube_arr[0] == url) { // значит ссылка не содержала ни "youtu.be/" ни "youtube.com/watch?v="
+			youtube_id = "";
+		}
+
+		if (youtube_id != "") {	
+			$(this).parent().find(".addvideo__video-container").slideDown();
+			$(this).parent().find(".addvideo__video-responsive").append('<iframe class="addvideo__item" src="https://www.youtube.com/embed/'+youtube_id+'" frameborder="0" allowfullscreen></iframe>');
+		} else {
+			$(this).parent().find(".addvideo__video-container").slideUp();
+		}
+	});
+
+	// show voting inputs
+	$(".addnote__control-btn_voting").on("click", function() {
+		$(".addnote__row_voting").slideToggle();
+	});
+	// agent/my-areas/add
+	//добавить вариант опроса
 	$(".btn-add-voting-answer").on("click", function() {
-		//добавить вариант
+		var n = $("input.voting-answer").length;
+		n++;
+		$(this).parent().append('<input class="voting-answer" type="text" name="voting-answer'+n+'" placeholder="Вариант '+n+'">');
 	});
+	// agent/my-areas/add
+	//удалить вариант опроса (НО оставить скажем 2 инпута неудаляемыми)
 	$(".btn-remove-voting-answer").on("click", function() {
-		//удалить вариант (НО оставить скажем ТРИ инпута неудаляемыми)
+		var n = $("input.voting-answer").length;
+		if (n > 2) {
+			$('input[name="voting-answer'+n+'"]').remove();
+		}
 	});
 
 	//Custom RadioButtons
@@ -54,7 +184,6 @@ $(document).ready(function() {
 
 	// Рекламодатель: Поиск площадки
 	// выбор типа соц.сети
-	// $('.search-areas_youtube').hide();
 	$('.search-areas_all').hide();
 	$('.search-areas_default').show();
 	$('select.areatype').on('change', function() {
