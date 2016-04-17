@@ -99,58 +99,13 @@
 									<div class="addnote__row">
 										<input type="text" name="notename" placeholder="Название">
 									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="youtube" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-youtube"></i>YouTube</span>
+									<div class="addnote__row">
+										<div class="editnote__title">Социальная сеть:</div>
+										<div class="editnote__text"><i class="icon-googleplus"></i>Google+</div>
 									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="ok" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-ok"></i>Odnoklassniki</span>
-									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="instagram" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-instagram"></i>Instagram</span>
-									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="twitter" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-twitter"></i>Twitter</span>
-									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="vk" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-vk"></i>Vkontakte</span>
-									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="googleplus" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-googleplus"></i>Google +</span>
-									</div>
-									<div class="radiobutton radiobutton__notesocial">
-										<input class="rb" type="radio" name="notesocial" value="facebook" style="display: none;">
-										<i class="radiobutton__icon icon-radiobutton"></i>
-										<span class="radiobutton__title"><i class="icon-facebook"></i>Facebook</span>
-									</div>
-									<div class="addnote__row clearfix">
-										<div class="select-container wide addnote__row_youtube">
-											<select class="addnote__row_notetype" name="notetype" required>
-												<option value="youtube-text">Реклама в описании к видео (текст + ссылка)</option>
-												<option value="youtube-preroll">Преролл (видео перед роликом)</option>
-												<option value="youtube-brand">Брендированный ролик (полностью под бренд)</option>
-											</select>
-											<i class="icon icon-arrow-down-chevron"></i>
-										</div>
-										<div class="select-container mini addnote__row_all">
-											<select name="notetime" required>
-												<option value="day">24 часа</option>
-												<option value="month">На месяц</option>
-												<option value="forever">Навсегда</option>
-											</select>
-											<i class="icon icon-arrow-down-chevron"></i>
-										</div>
+									<div class="addnote__row">
+										<div class="editnote__title">Срок размещения:</div>
+										<div class="editnote__text">Навсегда</div>
 									</div>
 									<div class="addnote__row">
 										<div class="addnote__textarea-container">
@@ -165,14 +120,11 @@
 													<input type="text" name="urlprefix" placeholder="Динамический префикс">
 													<button class="btn-inner btn-popup-cancel" type="button">Сформировать</button>
 												</div>
-												<div class="addnote__control-btn addnote__control-btn_photo btn-icon2 inputfile-container" data-toggle="tooltip" data-placement="bottom" data-original-title="Фотография"><i class="icon-photo"></i>
+												<div class="addnote__control-btn addnote__control-btn_photo btn-icon2 inputfile-container" style="display: block;" data-toggle="tooltip" data-placement="bottom" data-original-title="Фотография"><i class="icon-photo"></i>
 													<input id="uploadphoto" type="file" class="inputfile" name="photo" value="">
 												</div>
-												<div class="addnote__control-btn addnote__control-btn_smiles btn-icon2" data-toggle="tooltip" data-placement="bottom" data-original-title="Смайлы"><i class="icon-smile"></i></div>
-												<div class="addnote__control-btn addnote__control-btn_video btn-icon2" data-toggle="tooltip" data-placement="bottom" data-original-title="Видео"><i class="icon-movie"></i></div>
-												<div class="addnote__control-btn addnote__control-btn_voting btn-icon2" data-toggle="tooltip" data-placement="bottom" data-original-title="Опрос"><i class="icon-interview"></i></div>
+												<div class="addnote__control-btn addnote__control-btn_video btn-icon2" style="display: block;" data-toggle="tooltip" data-placement="bottom" data-original-title="Видео"><i class="icon-movie"></i></div>
 											</div>
-											<div class="smiles">смайлы emoji</div>
 										</div> <!-- .addnote__textarea-container -->
 									</div>
 									<div class="addnote__row addnote__row_photo" style="display: none;">
@@ -189,15 +141,6 @@
 											<div class="addvideo__video-container">
 												<div class="addvideo__video-responsive"></div>
 											</div>
-										</div>
-									</div>
-									<div class="addnote__row addnote__row_voting" style="display: none;">
-										<div class="addvoting">
-											<input type="text" name="voting-questin" placeholder="Название опроса">
-											<span class="btn-add-voting-answer">Добавить вариант</span>
-											<span class="btn-remove-voting-answer icon-close"></span>
-											<input class="voting-answer" type="text" name="voting-answer1" placeholder="Вариант 1">
-											<input class="voting-answer" type="text" name="voting-answer2" placeholder="Вариант 2">
 										</div>
 									</div>
 									<button class="btn-inner addnote__btn" type="submit">Запустить задание</button>
