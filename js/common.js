@@ -12,6 +12,13 @@ $(document).ready(function() {
 	// http://adam.co/lab/jquery/customselect/
 	// https://github.com/adamcoulombe/jquery.customSelect
 	$("select").customSelect();
+	$("#orderpublish").hide();
+
+	// DatePicker PickMeUp
+	// https://github.com/nazar-pc/PickMeUp
+	$('.datepicker').pickmeup({
+		format  : 'd.m.Y'
+	});
 
 	// Удаление площадки ajax
 	$(".btn-popup-delete-area").on("click", function() {
@@ -23,7 +30,7 @@ $(document).ready(function() {
 
 	// agent/my-areas/add
 	// textarea maxlength counter
-	textareaMaxlengthUpdate();
+	// textareaMaxlengthUpdate();
 	$(".addnote__textarea").on("keyup", function() {
 		textareaMaxlengthUpdate();
 	});
