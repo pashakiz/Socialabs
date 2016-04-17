@@ -23,15 +23,10 @@ $(document).ready(function() {
 
 	// agent/my-areas/add
 	// textarea maxlength counter
-	// $('.addnote__textarea-maxlength-counter').html( $(".addnote__textarea").attr('maxlength') );
 	textareaMaxlengthUpdate();
 	$(".addnote__textarea").on("keyup", function() {
-		// var max = $(this).attr('maxlength'),
-		// 	cur = $(this).val().length;
-		// $('.addnote__textarea-maxlength-counter').html(max - cur);
 		textareaMaxlengthUpdate();
 	});
-
 	function textareaMaxlengthUpdate() {
 		var textarea = $(".addnote__textarea"),
 			counter = $('.addnote__textarea-maxlength-counter'),
