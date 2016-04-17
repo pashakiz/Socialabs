@@ -61,7 +61,7 @@ $(document).ready(function() {
 			$(".addnote__control-btn_smiles").show();
 			$(".addnote__control-btn_video").show();
 			$(".addnote__control-btn_voting").show();
-			$(".addnote__textarea").attr('maxlength', '3500');
+			$(".addnote__textarea").attr('maxlength', '2000');
 			textareaMaxlengthUpdate();
 		}
 		if (type == 'instagram') {
@@ -71,7 +71,7 @@ $(document).ready(function() {
 			$(".addnote__control-btn").hide();
 			$(".addnote__control-btn_photo").show();
 			$(".addnote__control-btn_smiles").show();
-			$(".addnote__textarea").attr('maxlength', '3500');
+			$(".addnote__textarea").attr('maxlength', '2000');
 			textareaMaxlengthUpdate();
 		}
 		if (type == 'twitter') {
@@ -91,7 +91,7 @@ $(document).ready(function() {
 			$(".addnote__control-btn_link").show();
 			$(".addnote__control-btn_photo").show();
 			$(".addnote__control-btn_video").show();
-			$(".addnote__textarea").attr('maxlength', '3500');
+			$(".addnote__textarea").attr('maxlength', '2000');
 			textareaMaxlengthUpdate();
 		}
 	});
@@ -100,12 +100,18 @@ $(document).ready(function() {
 		var type = $(this).val();
 		if (type == 'youtube-text') {
 			$('.addnote__row_all').show();
+			$(".addnote__textarea").attr('maxlength', '100');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'youtube-preroll') {
 			$('.addnote__row_all').hide();
+			$(".addnote__textarea").attr('maxlength', '2000');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'youtube-brand') {
 			$('.addnote__row_all').hide();
+			$(".addnote__textarea").attr('maxlength', '2000');
+			textareaMaxlengthUpdate();
 		}
 	});
 
