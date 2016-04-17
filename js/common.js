@@ -22,23 +22,42 @@ $(document).ready(function() {
 	});
 
 	// agent/my-areas/add
+	// textarea maxlength counter
+	// $('.addnote__textarea-maxlength-counter').html( $(".addnote__textarea").attr('maxlength') );
+	textareaMaxlengthUpdate();
+	$(".addnote__textarea").on("keyup", function() {
+		// var max = $(this).attr('maxlength'),
+		// 	cur = $(this).val().length;
+		// $('.addnote__textarea-maxlength-counter').html(max - cur);
+		textareaMaxlengthUpdate();
+	});
+
+	function textareaMaxlengthUpdate() {
+		var textarea = $(".addnote__textarea"),
+			counter = $('.addnote__textarea-maxlength-counter'),
+			maxlength = textarea.attr('maxlength'),
+			current = textarea.val().length;
+
+		counter.html(maxlength - current);
+	}
+
+	// agent/my-areas/add
 	// выбор соц.сети
 	$('.addnote__row_youtube').hide();
 	$('.radiobutton__notesocial').on('click', function() {
 		var type = $(this).children(":radio").val();
 		if (type == 'youtube') {
-			console.log('youtube');
 			$(".addnote__control-btn").hide();
 			$(".addnote__control-btn_link").show();
 			$('.addnote__row_youtube').show();
 			$('.addnote__row_all').hide();
 			if ( $('select.addnote__row_notetype').val() == 'youtube-text' ) {
-				console.log($('select.addnote__row_notetype').val());
 				$('.addnote__row_all').show();
 			}
+			$(".addnote__textarea").attr('maxlength', '100');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'vk') {
-			console.log('vk');
 			$('.addnote__row_youtube').hide();
 			$('.addnote__row_all').show();
 			$(".addnote__control-btn").hide();
@@ -47,6 +66,8 @@ $(document).ready(function() {
 			$(".addnote__control-btn_smiles").show();
 			$(".addnote__control-btn_video").show();
 			$(".addnote__control-btn_voting").show();
+			$(".addnote__textarea").attr('maxlength', '3500');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'instagram') {
 			console.log('instagram');
@@ -55,6 +76,8 @@ $(document).ready(function() {
 			$(".addnote__control-btn").hide();
 			$(".addnote__control-btn_photo").show();
 			$(".addnote__control-btn_smiles").show();
+			$(".addnote__textarea").attr('maxlength', '3500');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'twitter') {
 			console.log('twitter');
@@ -63,6 +86,8 @@ $(document).ready(function() {
 			$(".addnote__control-btn").hide();
 			$(".addnote__control-btn_link").show();
 			$(".addnote__control-btn_photo").show();
+			$(".addnote__textarea").attr('maxlength', '140');
+			textareaMaxlengthUpdate();
 		}
 		if (type == 'ok' || type == 'googleplus' || type == 'facebook' ) {
 			$('.addnote__row_youtube').hide();
@@ -71,6 +96,8 @@ $(document).ready(function() {
 			$(".addnote__control-btn_link").show();
 			$(".addnote__control-btn_photo").show();
 			$(".addnote__control-btn_video").show();
+			$(".addnote__textarea").attr('maxlength', '3500');
+			textareaMaxlengthUpdate();
 		}
 	});
 	// выбор типа рекламы для youtube

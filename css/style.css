@@ -1234,12 +1234,21 @@ form.addnote-type input[type=text],
 form.addnote-type input[type=password],
 form.addnote-type textarea {
 	font-size: 12px;
+	line-height: 16px;
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
 }
 .addnote__textarea-container {
 	position: relative;
+}
+.addnote__textarea-maxlength-counter {
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	font-size: 8px;
+	font-weight: 400;
+	color: #d7d7d7;
 }
 .addnote__controls {
 	position: absolute;
