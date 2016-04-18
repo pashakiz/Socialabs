@@ -1,8 +1,8 @@
 {
 	"metadata": {
 		"name": "SocAdvert",
-		"lastOpened": 1458731729796,
-		"created": 1458731715261
+		"lastOpened": 1460971985425,
+		"created": 1460971979041
 	},
 	"iconSets": [
 		{
@@ -408,12 +408,20 @@
 					"tempChar": ""
 				},
 				{
+					"order": 72,
+					"id": 72,
+					"prevSize": 32,
+					"code": 59719,
+					"name": "favorite-fill",
+					"tempChar": ""
+				},
+				{
 					"order": 51,
 					"id": 34,
 					"prevSize": 32,
 					"code": 59698,
 					"name": "favorite-bold",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 52,
@@ -421,7 +429,7 @@
 					"prevSize": 32,
 					"code": 59699,
 					"name": "favorite",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 53,
@@ -429,7 +437,7 @@
 					"prevSize": 32,
 					"code": 59700,
 					"name": "edit",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 54,
@@ -437,7 +445,7 @@
 					"prevSize": 32,
 					"code": 59701,
 					"name": "download",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 55,
@@ -445,7 +453,7 @@
 					"prevSize": 32,
 					"code": 59702,
 					"name": "desktop",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 56,
@@ -453,7 +461,7 @@
 					"prevSize": 32,
 					"code": 59703,
 					"name": "denied",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 57,
@@ -461,7 +469,7 @@
 					"prevSize": 32,
 					"code": 59704,
 					"name": "delete",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 58,
@@ -469,7 +477,7 @@
 					"prevSize": 32,
 					"code": 59705,
 					"name": "comments-bold",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 59,
@@ -477,7 +485,7 @@
 					"prevSize": 32,
 					"code": 59706,
 					"name": "comments",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 60,
@@ -485,7 +493,7 @@
 					"prevSize": 32,
 					"code": 59707,
 					"name": "checkbox-uncheked",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 61,
@@ -493,7 +501,7 @@
 					"prevSize": 32,
 					"code": 59708,
 					"name": "checkbox-cheked",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 62,
@@ -501,7 +509,7 @@
 					"prevSize": 32,
 					"code": 59709,
 					"name": "campaign",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 63,
@@ -509,7 +517,7 @@
 					"prevSize": 32,
 					"code": 59710,
 					"name": "calendar-bold",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 64,
@@ -517,7 +525,7 @@
 					"prevSize": 32,
 					"code": 59711,
 					"name": "calendar",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 65,
@@ -525,7 +533,7 @@
 					"prevSize": 32,
 					"code": 59712,
 					"name": "balance-earned",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 66,
@@ -533,7 +541,7 @@
 					"prevSize": 32,
 					"code": 59713,
 					"name": "balance",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 67,
@@ -541,7 +549,7 @@
 					"prevSize": 32,
 					"code": 59714,
 					"name": "arrow-down-chevron",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 68,
@@ -549,7 +557,7 @@
 					"prevSize": 32,
 					"code": 59715,
 					"name": "arrow-down",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 69,
@@ -557,7 +565,7 @@
 					"prevSize": 32,
 					"code": 59716,
 					"name": "advertising-coverage",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 70,
@@ -565,7 +573,7 @@
 					"prevSize": 32,
 					"code": 59717,
 					"name": "activate",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 71,
@@ -573,7 +581,7 @@
 					"prevSize": 32,
 					"code": 59718,
 					"name": "accept",
-					"tempChar": ""
+					"tempChar": ""
 				}
 			],
 			"id": 0,
@@ -1256,6 +1264,18 @@
 					]
 				},
 				{
+					"id": 72,
+					"paths": [
+						"M1003.2 459.2c19.2-19.2 25.6-48 17.6-73.6-9.6-25.6-32-44.8-59.2-48l-256-38.4c-6.4-1.6-11.2-4.8-14.4-11.2l-112-232c-12.8-24-38.4-40-67.2-40s-54.4 16-67.2 41.6l-112 232c-3.2 6.4-8 9.6-14.4 11.2l-256 38.4c-27.2 4.8-49.6 22.4-59.2 48s-1.6 54.4 17.6 73.6l188.8 188.8c4.8 4.8 6.4 11.2 4.8 16l-43.2 260.8c-4.8 27.2 8 54.4 30.4 70.4 12.8 8 27.2 12.8 43.2 12.8 12.8 0 24-3.2 35.2-9.6l224-120c6.4-3.2 12.8-3.2 17.6 0l224 120c11.2 6.4 24 9.6 35.2 9.6 14.4 0 30.4-4.8 43.2-12.8 22.4-16 35.2-43.2 30.4-70.4l-43.2-260.8c-1.6-6.4 1.6-12.8 4.8-16l187.2-190.4z"
+					],
+					"attrs": [],
+					"isMulticolor": false,
+					"grid": 0,
+					"tags": [
+						"favorite-fill"
+					]
+				},
+				{
 					"id": 34,
 					"paths": [
 						"M1019.2 392c-9.6-27.2-33.6-44.8-64-49.6l-259.2-36.8-112-219.2c-12.8-25.6-41.6-43.2-72-43.2s-59.2 16-72 43.2l-112 219.2-259.2 36.8c-30.4 4.8-54.4 22.4-64 49.6s-3.2 56 19.2 75.2l188.8 177.6-43.2 246.4c-4.8 27.2 8 56 33.6 73.6 24 16 57.6 17.6 84.8 4.8l224-113.6 225.6 113.6c11.2 6.4 25.6 9.6 38.4 9.6 16 0 32-4.8 46.4-12.8 25.6-16 38.4-44.8 33.6-73.6l-43.2-246.4 188.8-177.6c20.8-20.8 27.2-49.6 17.6-76.8zM299.2 656c4.8-24-4.8-48-22.4-64l-180.8-171.2 248-35.2c27.2-3.2 49.6-19.2 60.8-41.6l107.2-209.6 107.2 209.6c11.2 22.4 33.6 38.4 60.8 41.6l248 35.2-182.4 171.2c-17.6 17.6-25.6 40-22.4 64l41.6 236.8-216-108.8c-11.2-6.4-25.6-9.6-38.4-9.6s-27.2 3.2-38.4 9.6l-216 108.8 43.2-236.8z"
@@ -1553,7 +1573,6 @@
 			"colorThemeIdx": 0
 		}
 	],
-	"uid": -1,
 	"preferences": {
 		"showGlyphs": true,
 		"showCodes": true,
@@ -1587,5 +1606,6 @@
 		},
 		"historySize": 100,
 		"gridSize": 16
-	}
+	},
+	"uid": -1
 }

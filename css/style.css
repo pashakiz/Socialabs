@@ -968,19 +968,15 @@ input[type=range]:focus {
 	margin-top: 0;
 	margin-bottom: 8px;
 }
-.offers__timeresponse {
+.offers__icontext {
 	font-size: 12px;
 	font-weight: 400;
 	color: #888888;
 }
-.offers__date {
+.offers__inlineblock {
 	display: inline-block;
-	font-size: 12px;
-	font-weight: 400;
-	color: #888888;
 }
-.offers__timeresponse .icon,
-.offers__date .icon {
+.offers__icontext .icon {
 	font-size: 14px;
 	color: #5473b7;
 	margin-right: 10px;

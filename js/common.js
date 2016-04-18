@@ -20,12 +20,35 @@ $(document).ready(function() {
 		format  : 'd.m.Y'
 	});
 
-	// Удаление площадки ajax
+	// Удаление площадки ajax (Агент)
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
 	});
+	// Удаление заявки (Рекламодатель)
+	var btn_delete_offer = ""; // global
+	$(".btn-delete-offer").on("click", function() {
+		btn_delete_offer = $(this);
+	});
+	$(".btn-popup-delete-offer").on("click", function() {
+		btn_delete_offer.closest(".content__body__areaitem").slideUp();
+		setTimeout(function() {
+			btn_delete_offer.closest(".content__body__areaitem").remove();
+		}, 1000);
+		$.fancybox.close();
+	});
 	$(".btn-popup-cancel").on("click", function() {
 		$.fancybox.close();
+	});
+	
+	// Добавление заявки в Избранное (Рекламодатель)
+	$(".btn-offer-favorite").on("click", function() {
+		if ( $(this).children("i").hasClass("icon-favorite") ) { //add to favorites
+			$(this).children("i").removeClass("icon-favorite");
+			$(this).children("i").addClass("icon-favorite-fill");
+		} else { //remove from favorites
+			$(this).children("i").removeClass("icon-favorite-fill");
+			$(this).children("i").addClass("icon-favorite");
+		}
 	});
 
 	// agent/my-areas/add
@@ -327,6 +350,15 @@ $(document).ready(function() {
 		$(".content").addClass("move");
 		$(".sidebarleft").addClass("move");
 		$(".sidebarright").addClass("move");
+	});
+	// show messages (написать агенту конкретному), page: advertiser_campaigns_offers-*.html
+	$(".message2agent").on("click", function() {
+		$(".sidebarleft__header__controls__item").removeClass("active");
+		$(".content").addClass("move");
+		$(".sidebarleft").addClass("move");
+		$(".sidebarright").addClass("move");
+		console.log('show-agent-in-dialogs');
+		$(".chain-messages-dialog").show();
 	});
 	// hide messages
 	$(".sidebarright__close").on("click", function() {
