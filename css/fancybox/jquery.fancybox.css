@@ -191,7 +191,7 @@
 	left: 0;
 	overflow: hidden;
 	display: none;
-	z-index: 100;
+	z-index: 8040;
 	background-color: rgba(0,0,0,0.3);
 }
 

@@ -19,6 +19,9 @@ $(document).ready(function() {
 	$('.datepicker').pickmeup({
 		format  : 'd.m.Y'
 	});
+	$('.datepicker-range').pickmeup({
+		mode	: 'range'
+	});
 
 	// Удаление площадки ajax (Агент)
 	$(".btn-popup-delete-area").on("click", function() {
@@ -39,7 +42,7 @@ $(document).ready(function() {
 	$(".btn-popup-cancel").on("click", function() {
 		$.fancybox.close();
 	});
-	
+
 	// Добавление заявки в Избранное (Рекламодатель)
 	$(".btn-offer-favorite").on("click", function() {
 		if ( $(this).children("i").hasClass("icon-favorite") ) { //add to favorites
@@ -341,6 +344,27 @@ $(document).ready(function() {
 		$("input[value='"+chekbox_value+"']").prop("checked", false);
 		$("input[value='"+chekbox_value+"']").parent().children(".checkbox__icon").removeClass("icon-accept");
 		$(this).remove();
+	});
+
+	new Morris.Line({
+		// ID of the element in which to draw the chart.
+		element: 'reportchart',
+		// Chart data records -- each entry in this array corresponds to a point on
+		// the chart.
+		data: [
+			{ year: '2008', value: 20 },
+			{ year: '2009', value: 10 },
+			{ year: '2010', value: 5 },
+			{ year: '2011', value: 5 },
+			{ year: '2012', value: 20 }
+		],
+		// The name of the data record attribute that contains x-values.
+		xkey: 'year',
+		// A list of names of data record attributes that contain y-values.
+		ykeys: ['value'],
+		// Labels for the ykeys -- will be displayed when you hover over the
+		// chart.
+		labels: ['Value']
 	});
 
 	// MESSAGES (begin) -------------------------------------------------------------------

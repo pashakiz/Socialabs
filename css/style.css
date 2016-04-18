@@ -1718,6 +1718,154 @@ input.inputfile {
 .campaign-note__right-value {
 	margin-top: 10px;
 }
+.content__chart-filter {}
+.content__chart-filter-btn {
+	float: left;
+	color: #888888;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 31px;
+	min-height: 31px;
+	padding: 0 13px;
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	margin-right: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.content__chart-filter-btn:hover {
+	background-color: #f3f3f3;
+}
+.content__chart-filter-btn i {
+	display: block;
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	margin-top: 5px;
+}
+.droplist {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 31px;
+	left: 0;
+	text-align: center;
+}
+.content__chart-filter-btn:hover .droplist {
+	display: block;
+}
+.droplist__item {
+	list-style: none;
+	display: block;
+	width: 45px;
+	padding: 0 8px;
+	height: 29px;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+	box-sizing: border-box;
+}
+.droplist__item i {
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+.droplist__item:hover {
+	background-color: #f3f3f3;
+}
+.content__chart-infographics {
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	margin-top: 10px;
+	padding: 0;
+}
+.content__chart-infographics-item {
+	float: left;
+	width: 33.33333333%;
+	border-right: 1px solid #efefef;
+	padding: 20px 38px 15px;
+	box-sizing: border-box;
+}
+.content__chart-infographics-item:last-child {
+	border-right: none;
+}
+.infographics__icon {
+	float: left;
+	font-size: 34px;
+	color: #5a79be;
+	margin-right: 17px;
+}
+.infographics__text {
+	float: left;
+	font-weight: 400;
+}
+.infographics__val {
+	color: #5a79be;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.infographics__title {
+	color: #888888;
+	font-size: 15px;
+}
+.chart {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	margin-top: 6px;
+	padding: 20px 24px;
+}
+.reportchart {
+	height: 290px;
+}
+.content__table-container {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	margin-top: 6px;
+}
+.content__table {
+	width: 100%;
+	color: #315bb7;
+	font-size: 14px;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+.content__table thead {
+	color: #767676;
+	font-size: 15px;
+	border-bottom: 1px solid #efefef;
+}
+.content__table th {
+	font-weight: 400;
+	text-align: left;
+	height: 42px;
+	vertical-align: middle;
+}
+.content__table td {
+	height: 49px;
+	vertical-align: middle;
+}
+.content__table .title {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 18px;
+	min-width: 270px;
+	font-weight: 500;
+	text-decoration: none;
+}
+.content__table .title:hover {
+	text-decoration: underline;
+}
+.content__table tr td img {
+	width: 33px;
+	height: 31px;
+}
+.content__table th,
+.content__table td {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .pagination {
 	margin: 16px 0 0 16px;
 }
@@ -2524,5 +2672,28 @@ input.inputfile {
 }
 .popup_f2 {
 	padding: 18px 35px;
+}
+.popup_screenshot {
+	text-align: center;
+	max-height: 600px;
+}
+.popup__screenshot {
+	display: block;
+	max-width: 700px;
+	max-height: 550px;
+}
+.popup__screenshot img {
+	width: 100%;
+	height: auto;
+	max-height: 600px;
+}
+.popup-btn-img-download {
+	display: inline-block;
+	width: 200px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -100px;
 }
 /* -------------------------------------- Bootstrap: tooltip.js v3.3.6 (end) -------------------------------------- */

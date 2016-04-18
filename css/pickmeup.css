@@ -14,7 +14,7 @@
   box-sizing: content-box;
   display: none;
   position: absolute;
-  z-index: 200;
+  z-index: 9000;
   margin-top: 2px;
   font-size: 13px; }
   .pickmeup * {
