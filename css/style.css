@@ -1917,35 +1917,104 @@ input.inputfile {
 	font-weight: 400;
 	margin-bottom: 6px;
 }
-.partners-program {
+.table {
 	background-color: #fff;
 	border-bottom: 1px solid #d3dbed;
 	font-weight: 400;
 }
-.partners-program table {
+.table table {
 	width: 100%;
 	font-weight: 400;
 	text-align: left;
 }
-.partners-program table tr {
+.table table tr {
 	border-bottom: 1px solid #efefef;
 }
-.partners-program table tr:last-child {
+.table table tr:last-child {
 	border-bottom: none;
 }
-.partners-program table th {
+.table table th {
 	font-weight: 400;
 	font-size: 14px;
 	color: #767676;
 	text-align: left;
 }
-.partners-program table td {
+.table table td {
 	font-size: 12px;
 	color: #315bb7;
 }
-.partners-program table th,
-.partners-program table td {
+.table table th,
+.table table td {
 	padding: 21px 24px 17px;
+}
+.table__finance-history table th {
+	font-size: 15px;
+}
+.table__finance-history table td {
+	font-size: 13px;
+}
+.content__finance {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	font-weight: 400;
+}
+.content__finance-header {
+	padding: 0 22px;
+	font-size: 17px;
+	line-height: 45px;
+	color: #2c68ae;
+	border-bottom: 1px solid #efefef;
+}
+.finance__header-img {
+	display: inline-block;
+	margin-left: 5px;
+}
+.finance__header-img_robokassa {
+	width: 95px;
+	height: 11px;
+}
+.content__row {
+	padding: 17px 22px 19px;
+}
+.finance__filter {
+	margin-bottom: 10px;
+}
+.finance__filter-select {
+	float: left;
+	margin-right: 13px;
+}
+.finance__filter-select:last-child {
+	margin-right: 0;
+}
+.finance__filter-select .customSelect {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+}
+.finance__filter-select .customSelectInner {
+	max-width: 55px;
+	line-height: 30px;
+	padding: 0 25px 0 11px;
+}
+.finance__filter-select .icon {
+	right: 9px;
+}
+.finance__filter-select .customSelectInner {}
+.finance__filter-select .customSelectInner {}
+input.finance-bill {
+	display: block;
+	margin-bottom: 9px;
+	width: 468px;
+}
+input.finance-summ {
+	display: block;
+	margin-bottom: 15px;
+	width: 468px;
+}
+.finance__footnote {
+	color: #a8a8a8;
+	font-size: 11px;
+	font-weight: 400;
+	margin: 10px 0 0 15px;
 }
 .pagination {
 	margin: 16px 0 0 16px;

@@ -46,24 +46,27 @@
 			</div> <!-- .sidebarleft__header -->
 			<div class="sidebarleft__user clearfix">
 				<div class="sidebarleft__user__avatar">
-					<img src="img/user-0002-ava-small.jpg" alt="urermane">
+					<img src="img/user-0001-ava-small.jpg" alt="urermane">
 				</div>
 				<div class="sidebarleft__user__info">
-					<div class="sidebarleft__user__info__role">Агент влияния</div>
-					<div class="sidebarleft__user__info__row"><i class="icon-online"></i>agent_vliyaniya</div>
+					<div class="sidebarleft__user__info__role">Рекламодатель</div>
+					<div class="sidebarleft__user__info__row"><i class="icon-online"></i>lilia_veshena</div>
 					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Баланс"><i class="icon-balance"></i>20 р.</a>
 					<a href="#" class="sidebarleft__user__info__row hover" data-toggle="tooltip" data-placement="left" title="Заработано"><i class="icon-balance-earned"></i>50000000 р.</a>
 				</div>
 			</div> <!-- .sidebarleft__user -->
 			<ul class="sidebarleft__nav">
 				<li>
+					<a href="advertiser_campaigns_active.html" class="sidebarleft__nav__a"><i class="icon-campaign"></i><span class="sidebarleft__nav__a__text">Кампании</span><span class="sidebarleft__nav__a__count">7</span></a>
+				</li>
+				<li>
 					<a href="#" class="sidebarleft__nav__a"><i class="icon-playground"></i>Площадки</a>
 				</li>
 				<li>
-					<a href="#" class="sidebarleft__nav__a"><i class="icon-tasks"></i><span class="sidebarleft__nav__a__text">Задания</span><span class="sidebarleft__nav__a__count">99</span></a>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-favorite-bold"></i>Избранное</a>
 				</li>
 				<li>
-					<a href="#" class="sidebarleft__nav__a"><i class="icon-news"></i><span class="sidebarleft__nav__a__text">Новости</span><span class="sidebarleft__nav__a__count">5</span></a>
+					<a href="#" class="sidebarleft__nav__a"><i class="icon-news"></i><span class="sidebarleft__nav__a__text">Новости</span><span class="sidebarleft__nav__a__count">99</span></a>
 				</li>
 				<li>
 					<a href="#" class="sidebarleft__nav__a"><i class="icon-partners"></i>Партнерская программа</a>
@@ -78,65 +81,30 @@
 		</div> <!-- .sidebarleft -->
 		<div class="content" data-simplebar-direction="vertical">
 			<div class="content__inner">
-				<div class="content__header">Партнерская программа</div>
-				<div class="table">
-					<table>
-						<tr>
-							<th>ID реферала</th>
-							<th>ФИО реферала</th>
-							<th>Дата</th>
-							<th>Заработано</th>
-							<th>Выведено</th>
-							<th>Вознаграждение</th>
-							<th>Итог</th>
-						</tr>
-						<tr>
-							<td>1 000 000 000</td>
-							<td>Семычкин А. И.</td>
-							<td>26.05.2016</td>
-							<td>1 000000 р.</td>
-							<td>1 000000 р.</td>
-							<td>1 0000000 р.</td>
-							<td>1 0000000 р.</td>
-						</tr>
-						<tr>
-							<td>h89437hg8h94w8h</td>
-							<td>Андреев А. И.</td>
-							<td>26.05.2016</td>
-							<td>1 000000 р.</td>
-							<td>1 000000 р.</td>
-							<td>1 0000000 р.</td>
-							<td>1 0000000 р.</td>
-						</tr>
-						<tr>
-							<td>847938479328472</td>
-							<td>Ложкин А. И.</td>
-							<td>26.05.2016</td>
-							<td>1 000000 р.</td>
-							<td>1 000000 р.</td>
-							<td>1 0000000 р.</td>
-							<td>1 0000000 р.</td>
-						</tr>
-						<tr>
-							<td>jhfdskfsdrwerwe</td>
-							<td>Стаканыч А. И.</td>
-							<td>26.05.2016</td>
-							<td>1 000000 р.</td>
-							<td>1 000000 р.</td>
-							<td>1 0000000 р.</td>
-							<td>1 0000000 р.</td>
-						</tr>
-						<tr>
-							<td>007</td>
-							<td>Бонд</td>
-							<td>26.05.2016</td>
-							<td>1 000000 р.</td>
-							<td>1 000000 р.</td>
-							<td>1 0000000 р.</td>
-							<td>1 0000000 р.</td>
-						</tr>
-					</table>
+				<div class="content__tabs clearfix">
+					<ul class="content__tabs__ul clearfix">
+						<li class="active">
+							<a href="finance-pay.html" class="content__tabs__ul__lnk">Пополнение</a>
+						</li>
+						<li>
+							<a href="finance-withdraw.html" class="content__tabs__ul__lnk">Вывод</a>
+						</li>
+						<li>
+							<a href="finance-history.html" class="content__tabs__ul__lnk">История</a>
+						</li>
+					</ul>
 				</div>
+				<div class="content__body">
+					<div class="content__finance">
+						<div class="content__finance-header">Пополнение баланса происходит через <img class="finance__header-img finance__header-img_robokassa" src="img/robokassa.svg" alt=""></div>
+						<div class="content__row">
+							<form class="finance-pay" action="" method="post">
+								<input class="finance-summ" type="text" name="finance-add" placeholder="Введите сумму">
+								<button class="btn-inner" type="submit">Пополнить</button>
+							</form>
+						</div>
+					</div>
+				</div> <!-- .content__body -->
 			</div> <!-- .content__inner -->
 		</div> <!-- .content -->
 		<div class="sidebarright">
@@ -410,76 +378,14 @@
 			</div>
 		</div> <!-- .sidebarright -->
 	</div>
-	<div id="orderpublish" class="popup popup_nopadding" style="display: block;">
-		<form class="orderpublish" action="" method="post">
-		<div class="popup__body">
-			<div class="popup__body-inner2">
-				<div class="form-title">Заявка&nbsp;на&nbsp;размещение</div>
-				<div class="popup__label">Выберете дату размещения</div>
-				<input class="popup__input-100 datepicker" type="text" name="datepublish" placeholder="00.00.0000">
-				<div class="popup__label">Выберете время</div>
-				<div class="select-container__popup-row">
-					<div class="select-container select-container_popup">
-						<select name="timehours">
-							<option value="00">00</option>
-							<option value="01">01</option>
-							<option value="02">02</option>
-							<option value="03">03</option>
-							<option value="04">04</option>
-							<option value="05">05</option>
-							<option value="06">06</option>
-							<option value="07">07</option>
-							<option value="08">08</option>
-							<option value="09">09</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-							<option value="16">16</option>
-							<option value="17">17</option>
-							<option value="18">18</option>
-							<option value="19">19</option>
-							<option value="20">20</option>
-							<option value="21">21</option>
-							<option value="22">22</option>
-							<option value="23">23</option>
-						</select>
-					</div>
-					<div class="select-container__popup-separator">:</div>
-					<div class="select-container select-container_popup">
-						<select name="timemins">
-							<option value="00">00</option>
-							<option value="10">10</option>
-							<option value="20">20</option>
-							<option value="30">30</option>
-							<option value="40">40</option>
-							<option value="50">50</option>
-						</select>
-					</div>
-				</div>
-				<div class="popup__label">Количество часов:</div>
-				<div class="popup__label-val">24 часа</div>
-				<div class="popup__label">Место/цена</div>
-				<div class="popup__areablock clearfix">
-					<div class="popup__area-img">
-						<img src="img/areaitem-photo.jpg" alt="nameorwhat?">
-					</div>
-					<div class="popup__area-name">Лучшие рецепты, а может быть и длинный заголовок какой-то...</div>
-					<div class="popup__area-price">100000000 р.</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup__footer popup_f2">
-			<button class="btn-inner" type="submit">Подтвердить</button>
-		</div>
+	<div id="personalmanager" class="popup">
+		<form class="personal-manager" action="" method="post">
+			<div class="form-title">Персональный менеджер</div>
+			<input type="text" name="phone" placeholder="Ведите ваш телефон">
+			<input type="text" name="email" placeholder="Email">
+			<input type="text" name="info" placeholder="Информация о рекламной кампании">
+			<button class="btn-inner" type="submit">Отправить заявку</button>
 		</form>
-	</div>
-	<div id="delete" class="popup">
-		<div class="form-title">Удаление площадки из избранного</div>
-		<p>Вы собираетесь удалить площадку "Лучшие рецепты" из избранного?</p>
-		<button class="btn-popup-delete-favorite btn-inner">Да</button><button class="btn-popup-cancel btn-inner">Отмена</button>
 	</div>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
