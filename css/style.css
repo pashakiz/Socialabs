@@ -1866,6 +1866,47 @@ input.inputfile {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.content__favorites-sort {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	margin-bottom: 6px;
+	font-weight: 400;
+}
+.favorites-sort__header {
+	font-size: 17px;
+	color: #2c68ae;
+	line-height: 45px;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 0 22px;
+}
+.favorites-sort__body {
+	padding: 16px 22px;
+}
+.favorites-sort__select {
+	float: left;
+	margin-right: 48px;
+}
+.favorites-sort__select .customSelectInner {
+	line-height: 30px;
+	padding: 0 25px 0 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.favorites-sort__select_social .customSelectInner {
+	max-width: 90px;
+}
+.favorites-sort__select_cnote .customSelectInner {
+	max-width: 183px;
+}
+.favorites-sort__select:last-child {
+	margin-right: 0;
+}
+.favorites-sort__select-title {
+	color: #6b6b6b;
+	font-size: 13px;
+	margin-bottom: 11px;
+}
 .pagination {
 	margin: 16px 0 0 16px;
 }

@@ -36,6 +36,7 @@ $(document).ready(function() {
 		btn_delete_offer.closest(".content__body__areaitem").slideUp();
 		setTimeout(function() {
 			btn_delete_offer.closest(".content__body__areaitem").remove();
+			btn_delete_offer = ""; // global clean
 		}, 1000);
 		$.fancybox.close();
 	});
@@ -52,6 +53,19 @@ $(document).ready(function() {
 			$(this).children("i").removeClass("icon-favorite-fill");
 			$(this).children("i").addClass("icon-favorite");
 		}
+	});
+	// Удаление площадки из Избранного (Рекламодатель)
+	var btn_delete_favorite = ""; // global
+	$(".btn-favorite-delete").on("click", function() {
+		btn_delete_favorite = $(this);
+	});
+	$(".btn-popup-delete-favorite").on("click", function() {
+		btn_delete_favorite.closest(".content__body__areaitem").slideUp();
+		setTimeout(function() {
+			btn_delete_favorite.closest(".content__body__areaitem").remove();
+			btn_delete_favorite = ""; // global clean
+		}, 1000);
+		$.fancybox.close();
 	});
 
 	// agent/my-areas/add
