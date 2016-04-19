@@ -1907,6 +1907,46 @@ input.inputfile {
 	font-size: 13px;
 	margin-bottom: 11px;
 }
+.content__header {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	line-height: 45px;
+	padding: 0 24px;
+	color: #2c68ae;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.partners-program {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	font-weight: 400;
+}
+.partners-program table {
+	width: 100%;
+	font-weight: 400;
+	text-align: left;
+}
+.partners-program table tr {
+	border-bottom: 1px solid #efefef;
+}
+.partners-program table tr:last-child {
+	border-bottom: none;
+}
+.partners-program table th {
+	font-weight: 400;
+	font-size: 14px;
+	color: #767676;
+	text-align: left;
+}
+.partners-program table td {
+	font-size: 12px;
+	color: #315bb7;
+}
+.partners-program table th,
+.partners-program table td {
+	padding: 21px 24px 17px;
+}
 .pagination {
 	margin: 16px 0 0 16px;
 }
