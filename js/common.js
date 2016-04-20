@@ -323,6 +323,23 @@ $(document).ready(function() {
 		};
 	});
 
+	// Custom CheckBoxes (turn, notification page)
+	$(".checkbox_turn").on("click", function() {
+		var current_checkbox = $(this).children(":checkbox");
+		if (current_checkbox.prop("checked")) {
+			// Снимаем отметку с checkbox'а
+			current_checkbox.prop("checked", false);
+			$(this).children(".checkbox__icon").addClass("icon-turn-off");
+			$(this).children(".checkbox__icon").removeClass("icon-turn-on");
+		} else {
+			// включаем чекбокс
+			current_checkbox.prop("checked", true);
+			// добавляем нужный класс иконке
+			$(this).children(".checkbox__icon").addClass("icon-turn-on");
+			$(this).children(".checkbox__icon").removeClass("icon-turn-off");
+		};
+	});
+
 	// Рекламодатель: Поиск площадки
 	// Select areatopics: Custom CheckBoxes (multiselect)
 	$(".checkbox_multiselect").on("click", function() {
