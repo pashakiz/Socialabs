@@ -81,28 +81,45 @@
 		</div> <!-- .sidebarleft -->
 		<div class="content" data-simplebar-direction="vertical">
 			<div class="content__inner">
-				<div class="content__tabs clearfix">
-					<ul class="content__tabs__ul clearfix">
-						<li class="active">
-							<a href="finance-pay.html" class="content__tabs__ul__lnk">Пополнение</a>
-						</li>
-						<li>
-							<a href="finance-withdraw.html" class="content__tabs__ul__lnk">Вывод</a>
-						</li>
-						<li>
-							<a href="finance-history.html" class="content__tabs__ul__lnk">История</a>
-						</li>
-					</ul>
-				</div>
 				<div class="content__body">
-					<div class="content__finance">
-						<div class="content__finance-header">Пополнение баланса происходит через <img class="finance__header-img finance__header-img_robokassa" src="img/robokassa.svg" alt=""></div>
-						<div class="content__row">
-							<form class="finance-pay" action="" method="post">
-								<input class="input-long-15mb" type="text" name="finance-add" placeholder="Введите сумму">
-								<button class="btn-inner" type="submit">Пополнить</button>
-							</form>
-						</div>
+					<div class="content__body-inner">
+						<form action="" method="post">
+							<div class="content__body-header">Личная информация:</div>
+							<div class="content__body-rowb">
+								<div class="settings__block1 clearfix">
+									<div class="settings__avatar">
+										<img class="addphoto__img" src="img/user-0001-ava-small.jpg" alt="username">
+									</div>
+									<div class="settings__role">
+										<div class="btn-inner btn-upload-avatar">Изменить аватар
+											<input id="upload-avatar" type="file" class="inputfile" name="avatar" value="">
+										</div>
+										<div class="settings__role-change">
+											Сменить роль на сайте:
+											<span class="btn-text btn-role-advertiser active">Рекламодатель</span>
+											<span class="btn-text btn-role-agent">Агент</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content__body-row">
+								<input class="input-long-15mb" name="fio" type="text" placeholder="ФИО">
+								<input class="input-long-15mb" name="email" type="text" placeholder="Email">
+								<input class="input-long-15mb" name="wmr" type="text" placeholder="Номер счета WMR">
+								<input class="input-long-15mb" name="pass" type="text" placeholder="Новый пароль">
+								<input class="input-long-15mb" name="passconfirm" type="text" placeholder="Пароль еще раз">
+								<input class="input-long-15mb" name="phone" type="text" placeholder="+7">
+								<div class="settings__sms">
+									<span class="btn-text btn-send-smscode">Получить код по смс</span>
+									<input class="settings__sms-input" name="smscode" type="text" placeholder="Введите код">
+									<span class="btn-text btn-send-smscode-again">Прислать повторно</span>
+									<button class="btn-inner btn-smscode-ok" name="btn-smscode" type="submit">Подтвердить</button>
+								</div>
+							</div>
+							<div class="content__body-footer">
+								<button class="btn-inner" name="submit" type="submit">Сохранить изменения</button>
+							</div>
+						</form>
 					</div>
 				</div> <!-- .content__body -->
 			</div> <!-- .content__inner -->

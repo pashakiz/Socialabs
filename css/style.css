@@ -880,6 +880,29 @@ input[type=range]:focus {
 	font-weight: 400;
 }
 .content__body {}
+.content__body-inner {
+	background-color: #fff;
+	border-bottom: 1px solid #d3dbed;
+	font-weight: 400;
+}
+.content__body-header {
+	color: #2c68ae;
+	font-size: 17px;
+	line-height: 45px;
+	padding: 0 22px;
+	border-bottom: 1px solid #efefef;
+}
+.content__body-row {
+	padding: 29px 22px 22px;
+}
+.content__body-rowb {
+	padding: 12px 22px 13px;
+	border-bottom: 1px solid #efefef;
+}
+.content__body-footer {
+	padding: 16px 22px;
+	border-top: 1px solid #efefef;
+}
 .content__body__areaitem {
 	margin-top: 6px;
 	background-color: #fff;
@@ -1998,14 +2021,75 @@ input.inputfile {
 .finance__filter-select .icon {
 	right: 9px;
 }
-.finance__filter-select .customSelectInner {}
-.finance__filter-select .customSelectInner {}
+.settings__block1 {}
+.settings__avatar {
+	float: left;
+	width: 68px;
+	height: 68px;
+	-webkit-border-radius: 34px;
+	-moz-border-radius: 34px;
+	border-radius: 34px;
+	overflow: hidden;
+	margin-right: 25px;
+}
+.settings__avatar img {
+	width: 100%;
+	height: auto;
+}
+.settings__role {
+	float: left;
+}
+.btn-upload-avatar {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 13px;
+}
+.settings__role-change {
+	color: #a8a8a8;
+	font-size: 12px;
+}
+.btn-text {
+	color: #68acff;
+	border-bottom: 1px dashed #68acff;
+	cursor: pointer;
+}
+.btn-text:hover {
+	border-bottom: none;
+}
+.btn-text.active {
+	border-bottom: none;
+	cursor: default;
+}
+.btn-role-advertiser {
+	margin-left: 19px;
+}
+.btn-role-agent {
+	margin-left: 19px;
+}
+.settings__sms {
+	display: inline-block;
+}
+input.settings__sms-input {
+	display: inline-block;
+	width: 70px;
+	margin: 0 10px
+}
+.btn-send-smscode,
+.btn-send-smscode-again {
+	font-size: 12px;
+}
+.btn-smscode-ok {
+	display: inline-block;
+	margin-left: 15px;
+}
 input.finance-bill {
 	display: block;
 	margin-bottom: 9px;
 	width: 468px;
 }
-input.finance-summ {
+input.input-long-15mb {
 	display: block;
 	margin-bottom: 15px;
 	width: 468px;

@@ -179,6 +179,10 @@ $(document).ready(function() {
 		uploadPhoto(this);
 		$(".addnote__row_photo").slideDown();
 	});
+	// personal settings
+	$("#upload-avatar").change(function(){
+		uploadPhoto(this);
+	});
 	// agent/my-areas/add
 	// remove uploaded photo
 	$(".btn-addphoto-remove").on("click", function() {
