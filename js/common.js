@@ -23,6 +23,11 @@ $(document).ready(function() {
 		mode	: 'range'
 	});
 
+	// Tickets: Ответить
+	$(".ticket__support-reply").on("click", function() {
+		$(".ticket__addmessage").slideDown();
+	});
+
 	// Удаление площадки ajax (Агент)
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
