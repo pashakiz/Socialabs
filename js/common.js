@@ -28,6 +28,28 @@ $(document).ready(function() {
 		$(".ticket__addmessage").slideDown();
 	});
 
+	// News: Ответить
+	$(".news__comment-reply-btn").on("click", function() {
+		$(".news__comment-reply").slideDown();
+	});
+	// News: показать все N комментариев
+	$(".news__toggle-comments").on("click", function() {
+		if ( $(this).hasClass("active") ) {
+			$(".news__comments-hidden").hide();
+			$(this).removeClass("active");
+			$(this).html('Показать все <span class="news__comments-count">1000</span> комментарии');
+		} else {
+			$(".news__comments-hidden").show();
+			$(this).addClass("active");
+			$(this).html('Скрыть комментарии');
+		}
+	});
+	// News: Likes
+	$(".news__likes").on("click", function() {
+		var n = $(this).children('.news__likes-counter').html();
+		$(this).children('.news__likes-counter').html(++n);
+	});
+
 	// Удаление площадки ajax (Агент)
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
