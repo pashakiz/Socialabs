@@ -50,6 +50,11 @@ $(document).ready(function() {
 		$(this).children('.news__likes-counter').html(++n);
 	});
 
+	// FAQ user settings
+	$('.user__settings').on('click', function() {
+		$(this).children('.user__settings-inner').toggle();
+	});
+
 	// Удаление площадки ajax (Агент)
 	$(".btn-popup-delete-area").on("click", function() {
 		console.log("ajax-delete-area-id");
