@@ -186,8 +186,27 @@ body {
 	padding: 12px 15px 11px;
 	text-decoration: none;
 }
-
-
+.page-error {
+	padding: 48px;
+	text-align: center;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+.page-error__title {
+	color: #90c2ff;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.page-error p {
+	margin: 0 0 17px 0;
+}
+.page-error a {
+	color: #90c2ff;
+	font-size: 12px;
+}
+.page-error a:hover {
+	text-decoration: underline;
+}
 .header .firstscreen {
 	height: 377px;
 	background-image: url(../img/header-bg.jpg);
@@ -429,6 +448,13 @@ footer {
 	font-size: 13px;
 	font-weight: 400;
 	padding: 20px 0 16px;
+}
+body.body-page-error footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 }
 footer .contacts {
 	float: left;
