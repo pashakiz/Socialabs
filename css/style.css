@@ -1310,6 +1310,28 @@ input[type=range]:focus {
 	float: left;
 	padding-top: 24px;
 }
+.area-add__type-settings {}
+.area-add__type-settings-row {
+	padding: 14px 0 15px;
+	border-bottom: 1px solid #efefef;
+}
+.area-add__type-settings-row:last-child {
+	border-bottom: none;
+}
+.area-add__type-settings-rowblock {
+	float: left;
+	margin-right: 48px;
+	color: #6b6b6b;
+}
+.area-add__type-settings-rowblock-title {
+	color: #6b6b6b;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 11px;
+}
+.area-add__type-settings-input {
+	margin-right: 38px;
+}
 .help {
 	float: right;
 	margin: 18px 86px 14px 0;
