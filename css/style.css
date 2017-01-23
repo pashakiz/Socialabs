@@ -1304,11 +1304,11 @@ input[type=range]:focus {
 .content__body__areaitem__info__main__middle {
 	float: left;
 	position: absolute;
-	left: 30%;
+	left: 33.5%;
 }
 .content__body__areaitem__info__item {
 	float: left;
-	margin-right: 30px;
+	margin-right: 33px;
 	padding-top: 8px;
 }
 .content__body__areaitem__info__item__row {
