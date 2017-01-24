@@ -2286,6 +2286,52 @@ input.inputfile {
 .table table td {
 	padding: 21px 24px 17px;
 }
+.partners_program_info{
+	margin-top:5px;
+	padding:20px 25px 15px;
+	font-size: 12px;
+	color:#6E6E6E;
+	background-color:#fff;
+}
+.partners_program_info h4{
+	margin:0;
+	margin-bottom:10px;
+	padding:0;
+	font-size: 12px;
+	font-weight:normal;
+	color: #315bb7;
+}
+.partners_program_info ul, .partners_program_info li, .partners_program_info li span{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+.partners_program_info ul{
+	color: #6E6E6E;
+}
+.partners_program_info li{
+	margin:5px 0;
+	padding-left:-10px;
+	color:#315bb7;
+	list-style:inside
+}
+.partners_program_info li span{
+	margin-left:-13px;
+	color:#6E6E6E;
+}
+@-moz-document url-prefix()
+	{
+		.partners_program_info li span{
+		margin-left:0px;
+	}
+}
+.partners_program_info p{
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+	color: #6E6E6E;
+}
 .table__finance-history table th {
 	font-size: 15px;
 }
